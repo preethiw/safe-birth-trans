@@ -1,0 +1,110 @@
+<template>
+  <div class="sharing-menu">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+      <defs>
+          <g id="facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-727.000000, -790.000000)" fill="currentColor">
+                  <g id="Group-4" transform="translate(584.000000, 789.000000)">
+                      <path d="M152.974599,31 L146.323511,31 L146.323511,15.9981065 L143,15.9981065 L143,10.8289573 L146.323511,10.8289573 L146.323511,7.72557435 C146.323511,3.50883615 148.199147,1 153.531396,1 L157.969518,1 L157.969518,6.17104267 L155.195692,6.17104267 C153.119894,6.17104267 152.982727,6.89339813 152.982727,8.24154254 L152.973583,10.8289573 L158,10.8289573 L157.411705,15.9981065 L152.973583,15.9981065 L152.973583,31 L152.974599,31 Z"></path>
+                  </g>
+              </g>
+          </g>
+          <g id="twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-822.000000, -790.000000)" fill="currentColor">
+                  <g id="Group-5" transform="translate(584.000000, 789.000000)">
+                      <path d="M267.994717,5.74288603 C269.435581,4.80687563 270.541175,3.32269247 271.060046,1.55467283 C269.710982,2.42351582 268.220227,3.05185613 266.629688,3.39202658 C265.360451,1.91867687 263.546399,1 261.538769,1 C257.687151,1 254.565945,4.39087101 254.565945,8.57258414 C254.565945,9.1662574 254.623819,9.74476383 254.743558,10.29727 C248.948172,9.98093312 243.809356,6.96923299 240.366849,2.38451538 C239.766156,3.50686119 239.422903,4.80687563 239.422903,6.19355771 C239.422903,8.81958688 240.654223,11.137946 242.526149,12.4986278 C241.382638,12.4596273 240.306979,12.1151235 239.365029,11.5517839 L239.365029,11.6449516 C239.365029,15.3153257 241.767799,18.3768597 244.962846,19.0702008 C244.376123,19.2478694 243.76146,19.3367037 243.12285,19.3367037 C242.673828,19.3367037 242.234783,19.2912032 241.811704,19.2023689 C242.697775,22.2097357 245.274168,24.4024267 248.327522,24.4609273 C245.938722,26.4932833 242.931267,27.7022967 239.664378,27.7022967 C239.101602,27.7022967 238.544814,27.6697963 238,27.5982955 C241.087281,29.7454861 244.753302,31 248.692728,31 C261.524799,31 268.537536,19.4602051 268.537536,9.45226058 C268.537536,9.12292359 268.533545,8.79575329 268.519575,8.47291637 C269.882608,7.40473783 271.068028,6.07005633 272,4.55120612 C270.748723,5.15354615 269.403651,5.56088401 267.994717,5.74288603 Z"></path>
+                  </g>
+              </g>
+          </g>
+      </defs>
+    </svg>
+    <ul>
+      <li>
+        <p>Share this site</p>
+      </li>
+      <li>
+        <a class="facebook" v-on:click="shareFacebook(generalText, 'https://www.safebirthevenhere.org')">
+          <span>Facebook</span>
+          <svg viewBox="0 0 15 30">
+              <use xlink:href="#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="twitter" v-on:click="shareTwitter(generalText, 'https://www.safebirthevenhere.org', 'safebirth, UNFPA')">
+          <span>Twitter</span>
+          <svg viewBox="0 0 34 30">
+              <use xlink:href="#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import sharing from './mixins/sharing.js'
+
+export default {
+  name: 'Social',
+  mixins: [sharing],
+  data () {
+    return {}
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.sharing-menu{
+  ul{
+    li{
+      display: inline-block;
+      vertical-align: middle;
+      height: em(23);
+      padding: 0;
+
+      &:not(:first-child){
+        margin-left: em($margin_sm);
+      }
+
+      p{
+        margin: 0;
+        height: em(29);
+        line-height: em(29);
+      }
+
+      a{
+        cursor: pointer;
+        color: currentColor;
+        font-size: em(14);
+
+        span{
+          display: none;
+        }
+
+        svg{
+          display: inline-block;
+          width: auto;
+          height: em(29);
+        }
+
+        &.facebook{
+          svg{
+            width: em(14.5);
+          }
+        }
+        &.twitter{
+          svg{
+            width: em(32.86);
+          }
+        }
+        &.linkedin{
+          svg{
+            width: em(31.14);
+          }
+        }
+      }
+    }
+  }
+}
+</style>

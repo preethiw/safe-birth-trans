@@ -1,0 +1,48 @@
+$browser-context: 16; // Default
+$offset_mobile: 56px;
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+@function prc($porcent) {
+  @return calc(#{$porcent}% - #{$offset_mobile});
+}
+
+@function vh($pixels, $context: 1080) {
+  @return #{($pixels*100)/$context}vh;
+} 
+$mobile_padding: 1.8rem;
+$color_body: #0C1020;
+$color1: #D39084;
+$color2: #EAEAEA;
+$color3: #AAF0FF;
+$color4: #70706E;
+$color5: #F6F6F6;
+
+$font_base: 'Muli', sans-serif;
+$font_title: 'NewzaldWeb-Medium';
+
+$margin_base: 8;
+$margin_sm: 16;
+$margin_md: 32;
+$margin_lg: 64;
+$margin_xl: 128;
+$margin_xxl: 192;
+
+$sidemenu: rem(430);
+$mobile_breakpoint: 768px;
+
+.overlay{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	background-color: #000;
+}

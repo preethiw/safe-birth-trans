@@ -1,0 +1,1322 @@
+{
+  "AFG": {
+    "name": "Afghanistan",
+    "number": 52,
+    "compare": false
+  },
+  "ALB": {
+    "name": "Albania",
+    "number": 1900,
+    "compare": true
+  },
+  "DZA": {
+    "name": "Algeria",
+    "number": 240,
+    "compare": true
+  },
+  "ASM": {
+    "name": "American Samoa",
+    "number": "",
+    "compare": false
+  },
+  "AND": {
+    "name": "Andorra",
+    "number": "",
+    "compare": false
+  },
+  "AGO": {
+    "name": "Angola",
+    "number": 32,
+    "compare": false
+  },
+  "ATG": {
+    "name": "Antigua and Barbuda",
+    "number": "",
+    "compare": false
+  },
+  "ARB": {
+    "name": "Arab World",
+    "number": 180,
+    "compare": false
+  },
+  "ARG": {
+    "name": "Argentina",
+    "number": 790,
+    "compare": true
+  },
+  "ARM": {
+    "name": "Armenia",
+    "number": 2300,
+    "compare": true
+  },
+  "ABW": {
+    "name": "Aruba",
+    "number": "",
+    "compare": false
+  },
+  "AUS": {
+    "name": "Australia",
+    "number": 8700,
+    "compare": true
+  },
+  "AUT": {
+    "name": "Austria",
+    "number": 18200,
+    "compare": true
+  },
+  "AZE": {
+    "name": "Azerbaijan",
+    "number": 1600,
+    "compare": true
+  },
+  "BHS": {
+    "name": "Bahamas, The",
+    "number": 660,
+    "compare": true
+  },
+  "BHR": {
+    "name": "Bahrain",
+    "number": 3000,
+    "compare": true
+  },
+  "BGD": {
+    "name": "Bangladesh",
+    "number": 240,
+    "compare": true
+  },
+  "BRB": {
+    "name": "Barbados",
+    "number": 2100,
+    "compare": true
+  },
+  "BLR": {
+    "name": "Belarus",
+    "number": 13800,
+    "compare": true
+  },
+  "BEL": {
+    "name": "Belgium",
+    "number": 8000,
+    "compare": true
+  },
+  "BLZ": {
+    "name": "Belize",
+    "number": 1300,
+    "compare": true
+  },
+  "BEN": {
+    "name": "Benin",
+    "number": 51,
+    "compare": false
+  },
+  "BMU": {
+    "name": "Bermuda",
+    "number": "",
+    "compare": false
+  },
+  "BTN": {
+    "name": "Bhutan",
+    "number": 310,
+    "compare": true
+  },
+  "BOL": {
+    "name": "Bolivia",
+    "number": 160,
+    "compare": false
+  },
+  "BIH": {
+    "name": "Bosnia and Herzegovina",
+    "number": 6800,
+    "compare": true
+  },
+  "BWA": {
+    "name": "Botswana",
+    "number": 270,
+    "compare": true
+  },
+  "BRA": {
+    "name": "Brazil",
+    "number": 1200,
+    "compare": true
+  },
+  "VGB": {
+    "name": "British Virgin Islands",
+    "number": "",
+    "compare": false
+  },
+  "BRN": {
+    "name": "Brunei Darussalam",
+    "number": 2300,
+    "compare": true
+  },
+  "BGR": {
+    "name": "Bulgaria",
+    "number": 6200,
+    "compare": true
+  },
+  "BFA": {
+    "name": "Burkina Faso",
+    "number": 48,
+    "compare": false
+  },
+  "BDI": {
+    "name": "Burundi",
+    "number": 23,
+    "compare": false
+  },
+  "CPV": {
+    "name": "Cabo Verde",
+    "number": 900,
+    "compare": true
+  },
+  "KHM": {
+    "name": "Cambodia",
+    "number": 210,
+    "compare": true
+  },
+  "CMR": {
+    "name": "Cameroon",
+    "number": 35,
+    "compare": false
+  },
+  "CAN": {
+    "name": "Canada",
+    "number": 8800,
+    "compare": true
+  },
+  "CSS": {
+    "name": "Caribbean small states",
+    "number": 470,
+    "compare": true
+  },
+  "CYM": {
+    "name": "Cayman Islands",
+    "number": "",
+    "compare": false
+  },
+  "CAF": {
+    "name": "Central African Republic",
+    "number": 27,
+    "compare": false
+  },
+  "CEB": {
+    "name": "Central Europe and the Baltics",
+    "number": 6200,
+    "compare": true
+  },
+  "TCD": {
+    "name": "Chad",
+    "number": 18,
+    "compare": false
+  },
+  "CHI": {
+    "name": "Channel Islands",
+    "number": "",
+    "compare": false
+  },
+  "CHL": {
+    "name": "Chile",
+    "number": 2600,
+    "compare": true
+  },
+  "CHN": {
+    "name": "China",
+    "number": 2400,
+    "compare": true
+  },
+  "COL": {
+    "name": "Colombia",
+    "number": 800,
+    "compare": true
+  },
+  "COM": {
+    "name": "Comoros",
+    "number": 66,
+    "compare": false
+  },
+  "COD": {
+    "name": "Congo, Dem. Rep.",
+    "number": 24,
+    "compare": false
+  },
+  "COG": {
+    "name": "Congo, Rep.",
+    "number": 45,
+    "compare": false
+  },
+  "CRI": {
+    "name": "Costa Rica",
+    "number": 2100,
+    "compare": true
+  },
+  "CIV": {
+    "name": "Cote d'Ivoire",
+    "number": 32,
+    "compare": false
+  },
+  "HRV": {
+    "name": "Croatia",
+    "number": 7900,
+    "compare": true
+  },
+  "CUB": {
+    "name": "Cuba",
+    "number": 1800,
+    "compare": true
+  },
+  "CUW": {
+    "name": "Curacao",
+    "number": "",
+    "compare": false
+  },
+  "CYP": {
+    "name": "Cyprus",
+    "number": 9400,
+    "compare": true
+  },
+  "CZE": {
+    "name": "Czech Republic",
+    "number": 14800,
+    "compare": true
+  },
+  "DNK": {
+    "name": "Denmark",
+    "number": 9500,
+    "compare": true
+  },
+  "DJI": {
+    "name": "Djibouti",
+    "number": 140,
+    "compare": false
+  },
+  "DMA": {
+    "name": "Dominica",
+    "number": "",
+    "compare": false
+  },
+  "DOM": {
+    "name": "Dominican Republic",
+    "number": 400,
+    "compare": true
+  },
+  "EAR": {
+    "name": "Early-demographic dividend",
+    "number": 230,
+    "compare": true
+  },
+  "EAS": {
+    "name": "East Asia & Pacific",
+    "number": 930,
+    "compare": true
+  },
+  "EAP": {
+    "name": "East Asia & Pacific (excluding high income)",
+    "number": 860,
+    "compare": true
+  },
+  "TEA": {
+    "name": "East Asia & Pacific (IDA & IBRD countries)",
+    "number": 860,
+    "compare": true
+  },
+  "ECU": {
+    "name": "Ecuador",
+    "number": 580,
+    "compare": true
+  },
+  "EGY": {
+    "name": "Egypt, Arab Rep.",
+    "number": 810,
+    "compare": true
+  },
+  "SLV": {
+    "name": "El Salvador",
+    "number": 890,
+    "compare": true
+  },
+  "GNQ": {
+    "name": "Equatorial Guinea",
+    "number": 61,
+    "compare": false
+  },
+  "ERI": {
+    "name": "Eritrea",
+    "number": 43,
+    "compare": false
+  },
+  "EST": {
+    "name": "Estonia",
+    "number": 6300,
+    "compare": true
+  },
+  "ETH": {
+    "name": "Ethiopia",
+    "number": 64,
+    "compare": false
+  },
+  "EMU": {
+    "name": "Euro area",
+    "number": 10300,
+    "compare": true
+  },
+  "ECS": {
+    "name": "Europe & Central Asia",
+    "number": 3400,
+    "compare": true
+  },
+  "ECA": {
+    "name": "Europe & Central Asia (excluding high income)",
+    "number": 2000,
+    "compare": true
+  },
+  "TEC": {
+    "name": "Europe & Central Asia (IDA & IBRD countries)",
+    "number": 2200,
+    "compare": true
+  },
+  "EUU": {
+    "name": "European Union",
+    "number": 8400,
+    "compare": true
+  },
+  "FRO": {
+    "name": "Faroe Islands",
+    "number": "",
+    "compare": false
+  },
+  "FJI": {
+    "name": "Fiji",
+    "number": 1200,
+    "compare": true
+  },
+  "FIN": {
+    "name": "Finland",
+    "number": 21700,
+    "compare": true
+  },
+  "FCS": {
+    "name": "Fragile and conflict affected situations",
+    "number": 46,
+    "compare": false
+  },
+  "FRA": {
+    "name": "France",
+    "number": 6100,
+    "compare": true
+  },
+  "PYF": {
+    "name": "French Polynesia",
+    "number": "",
+    "compare": false
+  },
+  "GAB": {
+    "name": "Gabon",
+    "number": 85,
+    "compare": false
+  },
+  "GMB": {
+    "name": "Gambia, The",
+    "number": 24,
+    "compare": false
+  },
+  "GEO": {
+    "name": "Georgia",
+    "number": 1500,
+    "compare": true
+  },
+  "DEU": {
+    "name": "Germany",
+    "number": 11700,
+    "compare": true
+  },
+  "GHA": {
+    "name": "Ghana",
+    "number": 74,
+    "compare": false
+  },
+  "GIB": {
+    "name": "Gibraltar",
+    "number": "",
+    "compare": false
+  },
+  "GRC": {
+    "name": "Greece",
+    "number": 23700,
+    "compare": true
+  },
+  "GRL": {
+    "name": "Greenland",
+    "number": "",
+    "compare": false
+  },
+  "GRD": {
+    "name": "Grenada",
+    "number": 1500,
+    "compare": true
+  },
+  "GUM": {
+    "name": "Guam",
+    "number": "",
+    "compare": false
+  },
+  "GTM": {
+    "name": "Guatemala",
+    "number": 330,
+    "compare": true
+  },
+  "GIN": {
+    "name": "Guinea",
+    "number": 29,
+    "compare": false
+  },
+  "GNB": {
+    "name": "Guinea-Bissau",
+    "number": 38,
+    "compare": false
+  },
+  "GUY": {
+    "name": "Guyana",
+    "number": 170,
+    "compare": false
+  },
+  "HTI": {
+    "name": "Haiti",
+    "number": 90,
+    "compare": false
+  },
+  "HPC": {
+    "name": "Heavily indebted poor countries (HIPC)",
+    "number": 41,
+    "compare": false
+  },
+  "HIC": {
+    "name": "High income",
+    "number": 4600,
+    "compare": true
+  },
+  "HND": {
+    "name": "Honduras",
+    "number": 300,
+    "compare": true
+  },
+  "HKG": {
+    "name": "Hong Kong SAR, China",
+    "number": "",
+    "compare": false
+  },
+  "HUN": {
+    "name": "Hungary",
+    "number": 4400,
+    "compare": true
+  },
+  "IBD": {
+    "name": "IBRD only",
+    "number": 450,
+    "compare": true
+  },
+  "ISL": {
+    "name": "Iceland",
+    "number": 14600,
+    "compare": true
+  },
+  "IBT": {
+    "name": "IDA & IBRD total",
+    "number": 160,
+    "compare": false
+  },
+  "IDB": {
+    "name": "IDA blend",
+    "number": 44,
+    "compare": false
+  },
+  "IDX": {
+    "name": "IDA only",
+    "number": 55,
+    "compare": false
+  },
+  "IDA": {
+    "name": "IDA total",
+    "number": 51,
+    "compare": false
+  },
+  "IND": {
+    "name": "India",
+    "number": 220,
+    "compare": true
+  },
+  "IDN": {
+    "name": "Indonesia",
+    "number": 320,
+    "compare": true
+  },
+  "IRN": {
+    "name": "Islamic Republic of Iran",
+    "number": 2000,
+    "compare": true
+  },
+  "IRQ": {
+    "name": "Iraq",
+    "number": 420,
+    "compare": true
+  },
+  "IRL": {
+    "name": "Ireland",
+    "number": 6100,
+    "compare": true
+  },
+  "IMN": {
+    "name": "Isle of Man",
+    "number": "",
+    "compare": false
+  },
+  "ISR": {
+    "name": "Israel",
+    "number": 6200,
+    "compare": true
+  },
+  "ITA": {
+    "name": "Italy",
+    "number": 19700,
+    "compare": true
+  },
+  "JAM": {
+    "name": "Jamaica",
+    "number": 520,
+    "compare": true
+  },
+  "JPN": {
+    "name": "Japan",
+    "number": 13400,
+    "compare": true
+  },
+  "JOR": {
+    "name": "Jordan",
+    "number": 490,
+    "compare": true
+  },
+  "KAZ": {
+    "name": "Kazakhstan",
+    "number": 3000,
+    "compare": true
+  },
+  "KEN": {
+    "name": "Kenya",
+    "number": 42,
+    "compare": false
+  },
+  "KIR": {
+    "name": "Kiribati",
+    "number": 300,
+    "compare": true
+  },
+  "PRK": {
+    "name": "Democratic People's Republic of Korea",
+    "number": 660,
+    "compare": true
+  },
+  "KOR": {
+    "name": "Republic of Korea",
+    "number": 7200,
+    "compare": true
+  },
+  "XKX": {
+    "name": "Kosovo",
+    "number": "",
+    "compare": false
+  },
+  "KWT": {
+    "name": "Kuwait",
+    "number": 10300,
+    "compare": true
+  },
+  "KGZ": {
+    "name": "Kyrgyz Republic",
+    "number": 390,
+    "compare": true
+  },
+  "LAO": {
+    "name": "Lao PDR",
+    "number": 150,
+    "compare": false
+  },
+  "LTE": {
+    "name": "Late-demographic dividend",
+    "number": 1700,
+    "compare": true
+  },
+  "LCN": {
+    "name": "Latin America & Caribbean",
+    "number": 670,
+    "compare": true
+  },
+  "LAC": {
+    "name": "Latin America & Caribbean (excluding high income)",
+    "number": 650,
+    "compare": true
+  },
+  "TLA": {
+    "name": "Latin America & the Caribbean (IDA & IBRD countries)",
+    "number": 660,
+    "compare": true
+  },
+  "LVA": {
+    "name": "Latvia",
+    "number": 3500,
+    "compare": true
+  },
+  "LDC": {
+    "name": "Least developed countries: UN classification",
+    "number": 52,
+    "compare": false
+  },
+  "LBN": {
+    "name": "Lebanon",
+    "number": 3700,
+    "compare": true
+  },
+  "LSO": {
+    "name": "Lesotho",
+    "number": 61,
+    "compare": false
+  },
+  "LBR": {
+    "name": "Liberia",
+    "number": 28,
+    "compare": false
+  },
+  "LBY": {
+    "name": "Libya",
+    "number": 4200,
+    "compare": true
+  },
+  "LIE": {
+    "name": "Liechtenstein",
+    "number": "",
+    "compare": false
+  },
+  "LTU": {
+    "name": "Lithuania",
+    "number": 6300,
+    "compare": true
+  },
+  "LMY": {
+    "name": "Low & middle income",
+    "number": 150,
+    "compare": false
+  },
+  "LIC": {
+    "name": "Low income",
+    "number": 43,
+    "compare": false
+  },
+  "LMC": {
+    "name": "Lower middle income",
+    "number": 130,
+    "compare": false
+  },
+  "LUX": {
+    "name": "Luxembourg",
+    "number": 6500,
+    "compare": true
+  },
+  "MAC": {
+    "name": "Macao SAR, China",
+    "number": "",
+    "compare": false
+  },
+  "MKD": {
+    "name": "former Yugoslav Republic of Macedonia",
+    "number": 8500,
+    "compare": true
+  },
+  "MDG": {
+    "name": "Madagascar",
+    "number": 60,
+    "compare": false
+  },
+  "MWI": {
+    "name": "Malawi",
+    "number": 29,
+    "compare": false
+  },
+  "MYS": {
+    "name": "Malaysia",
+    "number": 1200,
+    "compare": true
+  },
+  "MDV": {
+    "name": "Maldives",
+    "number": 600,
+    "compare": true
+  },
+  "MLI": {
+    "name": "Mali",
+    "number": 27,
+    "compare": false
+  },
+  "MLT": {
+    "name": "Malta",
+    "number": 8300,
+    "compare": true
+  },
+  "MHL": {
+    "name": "Marshall Islands",
+    "number": "",
+    "compare": false
+  },
+  "MRT": {
+    "name": "Mauritania",
+    "number": 36,
+    "compare": false
+  },
+  "MUS": {
+    "name": "Mauritius",
+    "number": 1300,
+    "compare": true
+  },
+  "MEX": {
+    "name": "Mexico",
+    "number": 1100,
+    "compare": true
+  },
+  "FSM": {
+    "name": "former Federated States of Micronesia",
+    "number": 310,
+    "compare": true
+  },
+  "MEA": {
+    "name": "Middle East & North Africa",
+    "number": 400,
+    "compare": true
+  },
+  "MNA": {
+    "name": "Middle East & North Africa (excluding high income)",
+    "number": 350,
+    "compare": true
+  },
+  "TMN": {
+    "name": "Middle East & North Africa (IDA & IBRD countries)",
+    "number": 350,
+    "compare": true
+  },
+  "MIC": {
+    "name": "Middle income",
+    "number": 220,
+    "compare": true
+  },
+  "MDA": {
+    "name": "Moldova",
+    "number": 3200,
+    "compare": true
+  },
+  "MCO": {
+    "name": "Monaco",
+    "number": "",
+    "compare": false
+  },
+  "MNG": {
+    "name": "Mongolia",
+    "number": 800,
+    "compare": true
+  },
+  "MNE": {
+    "name": "Montenegro",
+    "number": 8300,
+    "compare": true
+  },
+  "MAR": {
+    "name": "Morocco",
+    "number": 320,
+    "compare": true
+  },
+  "MOZ": {
+    "name": "Mozambique",
+    "number": 40,
+    "compare": false
+  },
+  "MMR": {
+    "name": "Myanmar",
+    "number": 260,
+    "compare": true
+  },
+  "NAM": {
+    "name": "Namibia",
+    "number": 100,
+    "compare": false
+  },
+  "NRU": {
+    "name": "Nauru",
+    "number": "",
+    "compare": false
+  },
+  "NPL": {
+    "name": "Nepal",
+    "number": 150,
+    "compare": false
+  },
+  "NLD": {
+    "name": "Netherlands",
+    "number": 8700,
+    "compare": true
+  },
+  "NCL": {
+    "name": "New Caledonia",
+    "number": "",
+    "compare": false
+  },
+  "NZL": {
+    "name": "New Zealand",
+    "number": 4500,
+    "compare": true
+  },
+  "NIC": {
+    "name": "Nicaragua",
+    "number": 270,
+    "compare": true
+  },
+  "NER": {
+    "name": "Niger",
+    "number": 23,
+    "compare": false
+  },
+  "NGA": {
+    "name": "Nigeria",
+    "number": 22,
+    "compare": false
+  },
+  "NAC": {
+    "name": "North America",
+    "number": 4100,
+    "compare": true
+  },
+  "MNP": {
+    "name": "Northern Mariana Islands",
+    "number": "",
+    "compare": false
+  },
+  "NOR": {
+    "name": "Norway",
+    "number": 11500,
+    "compare": true
+  },
+  "INX": {
+    "name": "Not classified",
+    "number": "",
+    "compare": false
+  },
+  "OED": {
+    "name": "OECD members",
+    "number": 3900,
+    "compare": true
+  },
+  "OMN": {
+    "name": "Oman",
+    "number": 1900,
+    "compare": true
+  },
+  "OSS": {
+    "name": "Other small states",
+    "number": 95,
+    "compare": false
+  },
+  "PSS": {
+    "name": "Pacific island small states",
+    "number": 400,
+    "compare": true
+  },
+  "PAK": {
+    "name": "Pakistan",
+    "number": 140,
+    "compare": false
+  },
+  "PLW": {
+    "name": "Palau",
+    "number": "",
+    "compare": false
+  },
+  "PAN": {
+    "name": "Panama",
+    "number": 420,
+    "compare": true
+  },
+  "PNG": {
+    "name": "Papua New Guinea",
+    "number": 120,
+    "compare": false
+  },
+  "PRY": {
+    "name": "Paraguay",
+    "number": 270,
+    "compare": true
+  },
+  "PER": {
+    "name": "Peru",
+    "number": 570,
+    "compare": true
+  },
+  "PHL": {
+    "name": "Philippines",
+    "number": 280,
+    "compare": true
+  },
+  "POL": {
+    "name": "Poland",
+    "number": 22100,
+    "compare": true
+  },
+  "PRT": {
+    "name": "Portugal",
+    "number": 8200,
+    "compare": true
+  },
+  "PST": {
+    "name": "Post-demographic dividend",
+    "number": 5800,
+    "compare": true
+  },
+  "PRE": {
+    "name": "Pre-demographic dividend",
+    "number": 32,
+    "compare": false
+  },
+  "PRI": {
+    "name": "Puerto Rico",
+    "number": 4300,
+    "compare": true
+  },
+  "QAT": {
+    "name": "Qatar",
+    "number": 3500,
+    "compare": true
+  },
+  "ROU": {
+    "name": "Romania",
+    "number": 2300,
+    "compare": true
+  },
+  "RUS": {
+    "name": "Russian Federation",
+    "number": 2300,
+    "compare": true
+  },
+  "RWA": {
+    "name": "Rwanda",
+    "number": 85,
+    "compare": false
+  },
+  "WSM": {
+    "name": "Samoa",
+    "number": 500,
+    "compare": true
+  },
+  "SMR": {
+    "name": "San Marino",
+    "number": "",
+    "compare": false
+  },
+  "STP": {
+    "name": "Sao Tome and Principe",
+    "number": 140,
+    "compare": false
+  },
+  "SAU": {
+    "name": "Saudi Arabia",
+    "number": 3100,
+    "compare": true
+  },
+  "SEN": {
+    "name": "Senegal",
+    "number": 61,
+    "compare": false
+  },
+  "SRB": {
+    "name": "Serbia",
+    "number": 3900,
+    "compare": true
+  },
+  "SYC": {
+    "name": "Seychelles",
+    "number": "",
+    "compare": false
+  },
+  "SLE": {
+    "name": "Sierra Leone",
+    "number": 17,
+    "compare": false
+  },
+  "SGP": {
+    "name": "Singapore",
+    "number": 8200,
+    "compare": true
+  },
+  "SXM": {
+    "name": "Sint Maarten (Dutch part)",
+    "number": "",
+    "compare": false
+  },
+  "SVK": {
+    "name": "Slovak Republic",
+    "number": 12100,
+    "compare": true
+  },
+  "SVN": {
+    "name": "Slovenia",
+    "number": 7000,
+    "compare": true
+  },
+  "SST": {
+    "name": "Small states",
+    "number": 120,
+    "compare": false
+  },
+  "SLB": {
+    "name": "Solomon Islands",
+    "number": 220,
+    "compare": true
+  },
+  "SOM": {
+    "name": "Somalia",
+    "number": 22,
+    "compare": false
+  },
+  "ZAF": {
+    "name": "South Africa",
+    "number": 300,
+    "compare": true
+  },
+  "SAS": {
+    "name": "South Asia",
+    "number": 200,
+    "compare": true
+  },
+  "TSA": {
+    "name": "South Asia (IDA & IBRD)",
+    "number": 200,
+    "compare": true
+  },
+  "SSD": {
+    "name": "South Sudan",
+    "number": 26,
+    "compare": false
+  },
+  "ESP": {
+    "name": "Spain",
+    "number": 14700,
+    "compare": true
+  },
+  "LKA": {
+    "name": "Sri Lanka",
+    "number": 1600,
+    "compare": true
+  },
+  "KNA": {
+    "name": "St. Kitts and Nevis",
+    "number": "",
+    "compare": false
+  },
+  "LCA": {
+    "name": "St. Lucia",
+    "number": 1100,
+    "compare": true
+  },
+  "MAF": {
+    "name": "St. Martin (French part)",
+    "number": "",
+    "compare": false
+  },
+  "VCT": {
+    "name": "St. Vincent and the Grenadines",
+    "number": 1100,
+    "compare": true
+  },
+  "SSF": {
+    "name": "Sub-Saharan Africa",
+    "number": 36,
+    "compare": false
+  },
+  "SSA": {
+    "name": "Sub-Saharan Africa (excluding high income)",
+    "number": 36,
+    "compare": false
+  },
+  "TSS": {
+    "name": "Sub-Saharan Africa (IDA & IBRD countries)",
+    "number": 36,
+    "compare": false
+  },
+  "SDN": {
+    "name": "Sudan",
+    "number": 72,
+    "compare": false
+  },
+  "SUR": {
+    "name": "Suriname",
+    "number": 270,
+    "compare": true
+  },
+  "SWZ": {
+    "name": "Swaziland",
+    "number": 76,
+    "compare": false
+  },
+  "SWE": {
+    "name": "Sweden",
+    "number": 12900,
+    "compare": true
+  },
+  "CHE": {
+    "name": "Switzerland",
+    "number": 12400,
+    "compare": true
+  },
+  "SYR": {
+    "name": "Syrian Arab Republic",
+    "number": 440,
+    "compare": true
+  },
+  "TJK": {
+    "name": "Tajikistan",
+    "number": 790,
+    "compare": true
+  },
+  "TZA": {
+    "name": "Tanzania",
+    "number": 45,
+    "compare": false
+  },
+  "THA": {
+    "name": "Thailand",
+    "number": 3600,
+    "compare": true
+  },
+  "TLS": {
+    "name": "Timor-Leste",
+    "number": 82,
+    "compare": false
+  },
+  "TGO": {
+    "name": "Togo",
+    "number": 58,
+    "compare": false
+  },
+  "TON": {
+    "name": "Tonga",
+    "number": 230,
+    "compare": true
+  },
+  "TTO": {
+    "name": "Trinidad and Tobago",
+    "number": 860,
+    "compare": true
+  },
+  "TUN": {
+    "name": "Tunisia",
+    "number": 710,
+    "compare": true
+  },
+  "TUR": {
+    "name": "Turkey",
+    "number": 3000,
+    "compare": true
+  },
+  "TKM": {
+    "name": "Turkmenistan",
+    "number": 940,
+    "compare": true
+  },
+  "TCA": {
+    "name": "Turks and Caicos Islands",
+    "number": "",
+    "compare": false
+  },
+  "TUV": {
+    "name": "Tuvalu",
+    "number": "",
+    "compare": false
+  },
+  "UGA": {
+    "name": "Uganda",
+    "number": 47,
+    "compare": false
+  },
+  "UKR": {
+    "name": "Ukraine",
+    "number": 2600,
+    "compare": true
+  },
+  "ARE": {
+    "name": "United Arab Emirates",
+    "number": 7900,
+    "compare": true
+  },
+  "GBR": {
+    "name": "United Kingdom",
+    "number": 5800,
+    "compare": true
+  },
+  "USA": {
+    "name": "United States",
+    "number": 3800,
+    "compare": true
+  },
+  "UMC": {
+    "name": "Upper middle income",
+    "number": 1300,
+    "compare": true
+  },
+  "URY": {
+    "name": "Uruguay",
+    "number": 3300,
+    "compare": true
+  },
+  "UZB": {
+    "name": "Uzbekistan",
+    "number": 1000,
+    "compare": true
+  },
+  "VUT": {
+    "name": "Vanuatu",
+    "number": 360,
+    "compare": true
+  },
+  "VEN": {
+    "name": "Bolivarian Republic of Venezuela",
+    "number": 420,
+    "compare": true
+  },
+  "VNM": {
+    "name": "Vietnam",
+    "number": 870,
+    "compare": true
+  },
+  "VIR": {
+    "name": "Virgin Islands (U.S.)",
+    "number": "",
+    "compare": false
+  },
+  "PSE": {
+    "name": "West Bank and Gaza",
+    "number": 490,
+    "compare": true
+  },
+  "WLD": {
+    "name": "World",
+    "number": 180,
+    "compare": false
+  },
+  "YEM": {
+    "name": "Yemen, Rep.",
+    "number": 60,
+    "compare": false
+  },
+  "ZMB": {
+    "name": "Zambia",
+    "number": 79,
+    "compare": false
+  },
+  "ZWE": {
+    "name": "Zimbabwe",
+    "number": 52,
+    "compare": false
+  }
+}

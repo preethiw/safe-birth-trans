@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="a_icon_share" transform="translate(1.000000, 1.000000)" stroke="#979797" fill="none">
+      <circle id="Oval-6" cx="3.46153846" cy="11.9230769" r="3.46153846"></circle>
+      <circle id="Oval-6-Copy" cx="16.5384615" cy="3.46153846" r="3.46153846"></circle>
+      <circle id="Oval-6-Copy-2" cx="16.5384615" cy="18.8461538" r="3.46153846"></circle>
+      <path d="M6.53846154,9.61538462 L13.4615385,5.76923077" id="Line-3" stroke-linecap="square"></path>
+      <path d="M6.53846154,17.3076923 L13.4615385,13.4615385" id="Line-3" stroke-linecap="square" transform="translate(10.000000, 15.384615) scale(-1, 1) translate(-10.000000, -15.384615) "></path>
+    </g>
+</svg>
