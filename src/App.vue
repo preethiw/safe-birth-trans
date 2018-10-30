@@ -1,5 +1,12 @@
 <template>
   <div id="app" :class="{slide: isSlide}">
+    <localizer>
+            <navbar />
+
+            <main class="container" role="main">
+                <router-view/>
+            </main>
+    </localizer>
     <!--<link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>-->
     <!-- <div class="app__overlay" ref="overlay"></div> -->
     <loading-component></loading-component>
@@ -25,6 +32,8 @@ import NavigationComponent from './components/Navigation.vue'
 import FullMenuComponent from './components/FullMenu.vue'
 import PopupComponent from './components/Popup.vue'
 import PopupCounterComponent from './components/PopupCounter.vue'
+import Navbar from './components/Navbar'
+import Localizer from './components/Localizer'
 
 import { TweenMax, Linear } from 'gsap'
 import 'ScrollTo'
@@ -465,10 +474,18 @@ export default {
     FullMenuComponent,
     NavigationComponent,
     PopupComponent,
-    PopupCounterComponent
+    PopupCounterComponent,
+    Localizer,
+    navbar: Navbar,
   }
 }
 </script>
+
+<style scoped>
+    .app-wrapper {
+        margin-top: 85px;
+    }
+</style>
 
 <style lang="scss">
 @import "assets/styles/reset.scss";

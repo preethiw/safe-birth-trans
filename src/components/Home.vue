@@ -4,7 +4,7 @@
       <div class="opening__content" ref="container">
         <div class="opening__section section0" ref="section0">
           <div class="opening__background" :class="{'offset-top': $root.testBrowser('chrome mobile')}" ref="background0"></div>
-          <h2 class="title-h2 section3__title2" ref="title0">Safe Birth, Even Here</h2>
+          <h2 class="title-h2 section3__title2" ref="title0"> {{$t('app_name')}} Safe Birth, Even Here</h2>
           <p ref="safeText">UNFPA’s campaign to end maternal deaths in humanitarian and fragile settings</p>
         </div>
         <div class="opening__section section1" ref="section1">

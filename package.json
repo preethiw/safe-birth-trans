@@ -24,7 +24,9 @@
     "vue-flickity": "^1.1.2",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
-    "vue-scrollto": "^2.11.0"
+    "vue-scrollto": "^2.11.0",
+    "i18next": "^10.5.0",
+    "svg-country-flags": "^1.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
