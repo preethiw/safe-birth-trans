@@ -7,8 +7,8 @@ export const locales = [
         dir: 'ltr',
     },
     {
-        code: 'ja',
-        name: '日本語',
+        code: 'fr',
+        name: 'français',
         dir: 'ltr',
     },
 ]

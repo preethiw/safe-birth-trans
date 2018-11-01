@@ -4,12 +4,12 @@
       <div class="opening__content" ref="container">
         <div class="opening__section section0" ref="section0">
           <div class="opening__background" :class="{'offset-top': $root.testBrowser('chrome mobile')}" ref="background0"></div>
-          <h2 class="title-h2 section3__title2" ref="title0"> {{$t('app_name')}} Safe Birth, Even Here</h2>
-          <p ref="safeText">UNFPA’s campaign to end maternal deaths in humanitarian and fragile settings</p>
+          <h2 class="title-h2 section3__title2" ref="title0">{{ $t('safe_birth_title') }}</h2>
+          <p ref="safeText">{{ $t('safe_birth_tag_line') }}</p>
         </div>
         <div class="opening__section section1" ref="section1">
           <div class="opening__background" :class="{'offset-top': $root.testBrowser('chrome mobile')}" ref="background1"></div>
-          <h2 class="title-h4" ref="title">Every 2 minutes, <br>a woman dies giving birth.</h2>
+          <h2 class="title-h4" ref="title"><p v-html="$t('opening_tag_line')" /></h2>
           <!--<h2 class="title-h4" ref="title">{{ua}}</h2>-->
           <div class="opening__circle" ref="opening_circle">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" ref="circleSvg">
@@ -28,22 +28,22 @@
           <div class="opening__counter" ref="counter" :class="{top: moveTop}">
             <counter-component :class="{big: !moveTop && $root.testBrowser('safari')}"></counter-component>
           </div>
-          <p ref="counterText">This clock will track the number of women who die giving birth while you are on the site.</p>
+          <p ref="counterText">{{ $t('clock_text') }}</p>
         </div>
         <div class="opening__section section3" ref="section3">
           <div class="opening__background" ref="background2"></div>
-          <h2 class="title-h2 section3__title1" ref="subtitle1">That’s 830 women every day.</h2>
-          <h2 class="title-h2 section3__title2" ref="subtitle2">Most could have been saved.</h2>
+          <h2 class="title-h2 section3__title1" ref="subtitle1">{{ $t('clock_message') }}</h2>
+          <h2 class="title-h2 section3__title2" ref="subtitle2">{{ $t('clock_message_2') }}</h2>
           <!-- <router-link to="/map" class="link-default" ref="nextbutton">Next</router-link> -->
           <div class="section3__credits" ref="credits">
-            <p>© UNFPA/Elena Heatherwick</p>
+            <p>© {{ $t('unfpa_elena_heatherwick') }}</p>
           </div>
         </div>
         <div class="opening__footer" ref="footer">
-          <p class="opening__instructions" ref="instruction">Scroll or use arrow keys to navigate whenever this indicator appears</p>
-          <p v-if="!$root.isMobile">Safe birth even here ® 2018
-          <br><a href="#" target="_blank">Privacy Policy</a> and <a href="https://www.unfpa.org/terms-use" target="_blank">Terms of Use</a></p>
-          <p v-if="!$root.isMobile">Young mother in South Sudan<br>© UNFPA South Sudan/Bruno Feder</p>
+          <p class="opening__instructions" ref="instruction">{{ $t('scroll_message') }}</p>
+          <p v-if="!$root.isMobile">{{ $t('safe_birth_title_bottom') }} ® 2018
+          <br><a href="#" target="_blank">{{ $t('scroll_message') }}</a> and <a href="https://www.unfpa.org/terms-use" target="_blank">{{ $t('terms_of_use') }}</a></p>
+          <p v-if="!$root.isMobile" v-html="$t('young_mother_in_south_sudan')" />
         </div>
       </div>
     </section>
