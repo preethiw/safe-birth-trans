@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row center-md middle-xs">
           <div class="col-xs-12 col-xl-12 col-sm-6 col-md-7 col-lg-8">
-            <h3 class="title-h3 little-xs" ref="text1">After the earthquake in Haiti, Iloyese’s cousin couldn’t find a doctor to help her give birth.</h3>
+            <h3 class="title-h3 little-xs" ref="text1">{{ $t("after_the_earthquake") }}</h3>
             <br class="show-mobile"/>
-            <h3 class="title-h3 intro__sub little-xs" ref="text1_sub">She and her baby died.</h3>
+            <h3 class="title-h3 intro__sub little-xs" ref="text1_sub">{{ $t("she_and_her_baby_died") }}</h3>
           </div>
         </div>
       </div>
@@ -16,12 +16,12 @@
       <div class="container">
         <div class="row center-md middle-md">
           <div class="col-md-9 col-xs-12">
-            <p class="title-h4" ref="text4">When her own time came, Iloyese had to travel 4 hours to get to a clinic to give birth.</p>
+            <p class="title-h4" ref="text4">{{ $t("when_her_own_time_came_iloyese_had_to_travel_4_hours_to_get_to_a_clinic_to_give_birth") }}</p>
           </div>
         </div>
       </div>
       <figcaption class="image-credit">
-        © UNFPA/Elena Heatherwick
+        © {{ $t("unfpa_elena_heatherwick") }}
       </figcaption>
     </section>
     <section class="margin-default image-animation" ref="gallery1">
@@ -33,31 +33,31 @@
               <next-gallery-component ref="nextGallery">
                 <div class="carousel-images__item">
                   <figure class="gallery-item1"></figure>
-                  <p>Midwife  Stephanie  Roche, hands gloved to protect her patient from infection, prepares to attend to a delivery at  Marigot Maternal Health Centre   clinic in  Marigot, Haiti. <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>{{ $t("midwife_stephanie_roche_hands_gloved_to_protect_her_patient_from_infection_prepares_to_attend_to_a_delivery_at_marigot_maternal_health_centre_clinic_in_marigot_haiti") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item2"></figure>
-                  <p>Iloyese  rests at the clinic with her newborn. When she finally got to the clinic, “I met Ms. Roche and liked her a lot, because of the way she serves and interacts with the women.” <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>{{ $t("iloyese_rests_at_the_clinic_with_her_newborn_when_she_finally_got_to_the_clinic_i_met_ms_roche_and_liked_her_a_lot_because_of_the_way_she_serves_and_interacts_with_the_women") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item3"></figure>
-                  <p>The clinic in  Marigot  also serves women who, like Iloyese, have to travel from afar to get the care they need. “The problem of access,” says midwife Roche, “It is a huge challenge, even now.” <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>{{ $t("the_clinic_in_marigot_also_serves_women_who_like_iloyese_have_to_travel_from_afar_to_get_the_care_they_need_the_problem_of_access_says_midwife_roche_it_is_a_huge_challenge_even_now") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item4"></figure>
-                  <p>In addition to providing services, maternal health clinics can offer information and counselling that help women and girls make informed decisions and stay healthy and safe. <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>{{ $t("in_addition_to_providing_services_maternal_health_clinics_can_offer_information_and_counselling_that_help_women_and_girls_make_informed_decisions_and_stay_healthy_and_safe") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item5"></figure>
-                  <p>Beyond delivering babies, maternal health clinics also provide a range of services – from antenatal care to family planning to HIV testing – that are critical for sexual and reproductive health. <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>{{ $t("beyond_delivering_babies_maternal_health_clinics_also_provide_a_range_of_services_from_antenatal_care_to_family_planning_to_hiv_testing_that_are_critical_for_sexual_and_reproductive_health") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item6"></figure>
-                  <p>For midwife Roche, the best part of her job happens in the delivery room. “The woman has been waiting for her baby,” she says, “so have we. So for me, that is the best moment.” <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>For midwife Roche, the best part of her job happens in the delivery room. “The woman has been waiting for her baby,” she says, “so have we. So for me, that is the best moment.” <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item7"></figure>
-                  <p>UNFPA, with support from Johnson & Johnson, is working to strengthen midwifery in Haiti. And thanks to the work of midwives like Ms. Roche, maternal deaths are falling by 2.2 per cent each year. “Midwives give life,” she says. <span>© UNFPA/Elena Heatherwick</span></p>
+                  <p>UNFPA, with support from Johnson & Johnson, is working to strengthen midwifery in Haiti. And thanks to the work of midwives like Ms. Roche, maternal deaths are falling by 2.2 per cent each year. “Midwives give life,” she says. <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
               </next-gallery-component>
             </div>
@@ -107,7 +107,7 @@
             <p class="lead">Most maternal deaths can be prevented with skilled care before, during and after delivery.</p>
             <hr class="p-div">
             <p class="lead">With support from Johnson & Johnson, UNFPA is working to equip midwives with the skills they need to ensure safe birth.</p>
-            <p class="final-credits">All Haiti photos © UNFPA/Elena Heatherwick</p>
+            <p class="final-credits">All Haiti photos © {{ $t("unfpa_elena_heatherwick") }}</p>
           </div>
         </div>
       </div>
