@@ -3,12 +3,14 @@
     <div class="popup-action__clock">
       <div class="popup-action__clockmessage">
         <counter-component></counter-component>
-        <p>While you've been here
-          <br>{{$root.women}} {{counterDescription}} died in childbirth.</p>
+        <p v-html="$t('popup_action_component_text',{
+         women : $root.women,
+         counter_description: counterDescription
+        })"></p>
       </div>
     </div>
     <div class="popup__content">
-      <p>I stand with UNFPA to end maternal deaths. Each of us can make a difference by raising awareness about a pregnant woman’s right to a #SafeBirth, no matter where she lives.</p>
+      <p>{{ $t("i_stand_with_unfpa_to_end_maternal_deaths) }}</p>
       <form @submit.prevent="subscribe" v-if="!isUS">
         <p>{{message}}</p>
         <input type="text" placeholder="Your first name" v-model="firstname" required>
@@ -16,9 +18,9 @@
         <input type="text" placeholder="Your email" v-model="email" required>
         <button class="btn btn--primary">{{buttonLabel}}</button>
       </form>
-      <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" class="btn btn--primary" v-else>Sign the pledge</a>
-      <p class="div">and / or</p>
-      <a :href="donateLink" target="_blank" class="btn btn--default">Donate</a>
+      <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" class="btn btn--primary" v-else>{{ $t("sign_the_pledge") }}</a>
+      <p class="div">{{ $t("and") }} / {{ $t("or") }}</p>
+      <a :href="donateLink" target="_blank" class="btn btn--default">{{ $t("donate") }}</a>
     </div>
   </div>
 </template>

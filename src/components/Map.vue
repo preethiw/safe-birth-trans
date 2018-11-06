@@ -3,10 +3,10 @@
     <section class="map-statistics">
       <div class="map-content" ref="container">
         <div class="map-content__title1" ref="section1">
-          <h2 class="title-h2" ref="title1">Maternal deaths are not evenly distributed around the world.</h2>
+          <h2 class="title-h2" ref="title1">{{ $t("maps_main_title1") }}</h2>
         </div>
         <div class="map-content__title2" ref="section2">
-          <h2 class="title-h2" ref="title2">Over half of maternal deaths occur in countries affected by humanitarian crises or fragility.</h2>
+          <h2 class="title-h2" ref="title2">{{ $t("maps_main_title2") }}</h2>
         </div>
 
         <div class="map-content__sharing" ref="mapSharing">
@@ -15,20 +15,20 @@
 
         <div class="map-content__title3" ref="section3" v-if="$root.userLocation !== null">
           <h2 class="title-h2" ref="title3">
-            Looks like you’re in
+            {{ $t("looks_like_you_are_in") }}
             <span>{{locationName}}</span>
           </h2>
         </div>
-        <!--<div class="map-zoom-legend" v-if="!mapActive"><span>Double tap on the map for zoom</span></div>-->
+        <!--<div class="map-zoom-legend" v-if="!mapActive"><span>{{ $t("double_tap_on_the_map_for_zoom") }}</span></div>-->
         <div class="map-legend" ref="legends">
           <div class="map-legend__map1" ref="legend1">
-            Maternal mortality, as of 2015
+           {{ $t("maps_bottom_text") }}
             <div class="map-legend__bar">
-              <span>low</span> <i></i> <span>high</span>
+              <span> {{ $t("low") }}</span> <i></i> <span> {{ $t("low") }}</span>
             </div>
           </div>
           <div class="map-legend__map2" ref="legend2">
-            <span></span> Areas affected by humanitarian crisis or fragile situations, as of {{year}}
+            <span></span> {{ $t("maps_second_slide_bottom_text2")}} {{year}}
           </div>
         </div>
         <!--<div class="map-controls">
@@ -41,20 +41,26 @@
         </div>
 
         <div class="map-content__toggle" :class="{on: mapOn}" ref="toggle">
-          <p>Compare maps</p>
-          <button v-on:click="toggleMap"><span>Togge map</span></button>
+          <p>{{ $t("compare_maps") }}</p>
+          <button v-on:click="toggleMap"><span>{{ $t('togge_map') }}</span></button>
         </div>
 
         <div class="map-comparison" ref="comparison">
           <div class="map-comparison__content">
             <h3 class="title-h4" v-if="$root.userLocation">
-              A woman in <story-dropdown-component></story-dropdown-component> is {{this.storyNumber}} times more likely to die in childbirth than a woman in {{locationName}}.
+              {{ $t("a_women_in") }} <story-dropdown-component></story-dropdown-component> {{ $t("coutnry_wise_comparison_text", {
+              story_number : this.storyNumber,
+              user_location : this.$root.dataUser.name,
+              }) }}
             </h3>
             <h3 class="title-h4" v-else>
-              A woman in <story-dropdown-component></story-dropdown-component> is {{this.storyNumber}} times more likely to die giving birth than a woman in {{this.$root.dataUser.name}}, the country with the world's lowest maternal mortality.
+              {{ $t("a_women_in") }} <story-dropdown-component></story-dropdown-component> {{ $t("coutnry_wise_comparison_text_1", {
+              story_number : this.storyNumber,
+              user_location : this.$root.dataUser.name,
+              }) }}
             </h3>
             <div class="map-comparison__actions">
-              <router-link :to="'/' + $root.dataStory.name.toLowerCase()" class="link-default">See the story</router-link>
+              <router-link :to="'/' + $root.dataStory.name.toLowerCase()" class="link-default">{{ $t("see_the_story") }}</router-link>
               <share-button-component v-on:click="sharing_popup = true" :class="{small: isSmallHeight && $root.isMobile}"></share-button-component>
             </div>
           </div>
@@ -76,11 +82,11 @@
     </section>
     <popup-component v-bind:openedClass="sharing_popup2" v-on:close="sharing_popup2 = false" class="popup-sharing">
       <div class="popup__content">
-        <p class="title-h5">Maternal deaths are not evenly distributed around the world. Find out how conflict and disaster, crisis and poverty threaten pregnant women’s lives, and join <span>@UNFPA</span> to support <span>#SafeBirth</span> even in the most challenging circumstances: <span>safebirthevenhere.org</span></p>
+        <p class="title-h5" v-html="$t('map_popup_sharing_content')"></p>
         <div class="buttons">
 
-          <a class="btn btn--primary" v-on:click="shareFacebook('Maternal deaths are not evenly distributed around the world. Find out how conflict and disaster, crisis and poverty threaten pregnant women’s lives, and join @UNFPA to support #SafeBirth even in the most challenging circumstances: safebirthevenhere.org', 'safebirth')">Share on Facebook</a>
-          <a class="btn btn--primary" v-on:click="shareTwitter('Maternal%20deaths%20are%20not%20evenly%20distributed%20around%20the%20world.%20Find%20out%20how%20conflict%20and%20disaster%2C%20crisis%20and%20poverty%20threaten%20pregnant%20women%E2%80%99s%20lives%2C%20and%20join%20%40UNFPA%20to%20support%20%23safebirth%20even%20in%20the%20most%20challenging%20circumstances%3A%20', 'safebirth', '')">Share on Twitter</a>
+          <a class="btn btn--primary" v-on:click="shareFacebook('Maternal deaths are not evenly distributed around the world. Find out how conflict and disaster, crisis and poverty threaten pregnant women’s lives, and join @UNFPA to support #SafeBirth even in the most challenging circumstances: safebirthevenhere.org', 'safebirth')">{{ $t("share_on_facebook")}}</a>
+          <a class="btn btn--primary" v-on:click="shareTwitter('Maternal%20deaths%20are%20not%20evenly%20distributed%20around%20the%20world.%20Find%20out%20how%20conflict%20and%20disaster%2C%20crisis%20and%20poverty%20threaten%20pregnant%20women%E2%80%99s%20lives%2C%20and%20join%20%40UNFPA%20to%20support%20%23safebirth%20even%20in%20the%20most%20challenging%20circumstances%3A%20', 'safebirth', '')">{{ $t("share_on_twitter") }}</a>
         </div>
       </div>
     </popup-component>
@@ -88,8 +94,8 @@
       <div class="popup__content">
         <p class="title-h5">{{storyTweet}} <span>#SafeBirth #UNFPA</span></p>
         <div class="buttons">
-          <a class="btn btn--primary" v-on:click="shareFacebook(storyTweet, 'safebirth')">Share on Facebook</a>
-          <a class="btn btn--primary" v-on:click="shareTwitter(storyTweet, 'safebirth', '')">Share on Twitter</a>
+          <a class="btn btn--primary" v-on:click="shareFacebook(storyTweet, 'safebirth')">{{ $t("share_on_facebook")}}</a>
+          <a class="btn btn--primary" v-on:click="shareTwitter(storyTweet, 'safebirth', '')">{{ $t("share_on_twitter") }}</a>
         </div>
       </div>
     </popup-component>
