@@ -4,8 +4,8 @@
       <div class="row middle-md">
         <div class="col-md-4 col-md-offset-1 col-xs-12">
           <blockquote class="blockquote-default image-animation__text" ref="text1">
-            <p class="blockquote-default__text">I can work to save my people.</p>
-            <!-- <p class="blockquote-default__cite">Yamah, a midwife and supervisor of a maternal health clinic</p> -->
+            <p class="blockquote-default__text">{{$t('i_can_work_to_save_my_people')}}</p>
+            <!-- <p class="blockquote-default__cite">{{$t("yamah_a_midwife_and_supervisor_of_a_maternal_health_clinic")}}</p> -->
           </blockquote>
         </div>
         <div class="col-md-7 col-xs-12">
@@ -13,7 +13,7 @@
             <div class="image-animation__overlay image-animation__overlay--right"></div>
             <img src="../assets/images/liberia-img1.jpg" alt="" class="image-animation__image" width="100%">
             <figcaption class="image-credit">
-              © UNFPA/Elena Heatherwick
+              © {{ $t("unfpa_elena_heatherwick") }}
             </figcaption>
           </figure>
         </div>
@@ -23,7 +23,7 @@
       <div class="image-floating__text">
         <blockquote class="blockquote-default image-animation__text" ref="text1">
           <p class="blockquote-default__text">I can work to save my people.</p>
-          <p class="blockquote-default__cite">— Yamah, a midwife and supervisor of a maternal health clinic</p>
+          <p class="blockquote-default__cite">— {{$t("yamah_a_midwife_and_supervisor_of_a_maternal_health_clinic")}}</p>
         </blockquote>
       </div>
       <figure class="image-animation__container">
@@ -36,24 +36,23 @@
       <div class="container">
         <div class="row center-xs middle-xs">
           <div class="col-md-8 col-xs-12">
-            <p class="title-h4" ref="text2">Midwife and clinic supervisor Yamah risked her own life to deliver babies during the Ebola outbreak.</p>
+            <p class="title-h4" ref="text2"> {{ $t("midwife_and_clinic_supervisor_yamah_risked_her_own_life_to_deliver_babies_during_the_ebola_outbreak") }} </p>
           </div>
         </div>
       </div>
       <figure class="hero-liberia"></figure>
       <figcaption class="image-credit">
-        © UNFPA/Elena Heatherwick
+        © {{ $t("unfpa_elena_heatherwick") }}
       </figcaption>
     </section>
     <section class="fixedText" ref="fixedText">
       <div class="container">
         <div class="row center-sm middle-xs">
           <div class="col-xs-12 col-xl-12 col-sm-6 col-md-7 col-lg-8">
-            <p class="title-h2 little-xs" ref="fixedText_title1">
-              The epidemic devastated Liberia’s fragile healthcare system.
-              <br>Maternal deaths surged.
+            <p class="title-h2 little-xs" ref="fixedText_title1" v-html="$t('the_epidemic_devastated_liberias_fragile_healthcare_systemmaternal_deaths_surged')">
+              
             </p>
-            <p class="title-h2 fixedText__title2 little-xs" ref="fixedText_title2">But even here, midwives like Yamah persevered in tending to mothers and their newborns.</p>
+            <p class="title-h2 fixedText__title2 little-xs" ref="fixedText_title2"> {{ $t("but_even_here_midwives_like_yamah_persevered_in_tending_to_mothers_and_their_newborns") }} </p>
           </div>
         </div>
       </div>
@@ -62,11 +61,9 @@
       <div class="container">
         <div class="row end-md">
           <div class="col-md-7 col-xs-12" ref="text3">
-            <p class="title-h4">
-              The epidemic devastated Liberia’s fragile healthcare system.
-              <br>Maternal deaths surged.
+            <p class="title-h4" v-html="$t('the_epidemic_devastated_liberias_fragile_healthcare_systemmaternal_deaths_surged')">
             </p>
-            <h3 class="title-h4">But even here, midwives like Yamah persevered in tending to mothers and their newborns.</h3>
+            <h3 class="title-h4">{{ $t("but_even_here_midwives_like_yamah_persevered_in_tending_to_mothers_and_their_newborns") }}</h3>
           </div>
         </div>
       </div>
@@ -78,27 +75,27 @@
           <next-gallery-component class="image-animation__image">
             <div class="carousel-images__item">
               <figure class="gallery-item1"></figure>
-              <p>Clinic supervisor Yamah Siafa set an example for her fellow midwives during the Ebola outbreak, going in to treat patients when others were too scared. Over 400 doctors and nurses died while treating patients during the epidemic. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p> {{ $t("clinic_supervisor_yamah_siafa_set_an_example_for_her_fellow_midwives_during_the_ebola_outbreak_going_in_to_treat_patients_when_others_were_too_scared_over_400_doctors_and_nurses_died_while_treating_patients_during_the_epidemic")}} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
             <div class="carousel-images__item">
               <figure class="gallery-item2"></figure>
-              <p>Midwife  Georgetta Gbelly   sits with patients at   the UNFPA-supported Sinje Health Centre clinic in  Grand Cape Mount County, Liberia. During the outbreak, many pregnant women stopped going to clinics out of fear of catching Ebola, and mortality rose as more birth complications went untreated. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p> {{ $t("midwife_georgetta_gbelly_sits_with_patients_at_the_unfpasupported_sinje_health_centre_clinic_in_grand_cape_mount_county_liberia_during_the_outbreak_many_pregnant_women_stopped_going_to_clinics_out_of_fear_of_catching_ebola_and_mortality_rose_as_more_birth_complications_went_untreated") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
             <div class="carousel-images__item">
               <figure class="gallery-item3"></figure>
-              <p>Maternal mortality is higher among poor women worldwide. In Liberia, the poorest women are less than half as likely as the richest to have a skilled attendant help them deliver their babies. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p> {{$t("maternal_mortality_is_higher_among_poor_women_worldwide_in_liberia_the_poorest_women_are_less_than_half_as_likely_as_the_richest_to_have_a_skilled_attendant_help_them_deliver_their_babies")}} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
             <div class="carousel-images__item">
               <figure class="gallery-item4"></figure>
-              <p>Midwife  Gbelly  takes a moment to fill out paperwork. UNFPA, with funding from Johnson & Johnson, is supporting Liberia to expand and train its midwifery workforce. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p> {{ $t("midwife_gbelly_takes_a_moment_to_fill_out_paperwork_unfpa_with_funding_from_johnson_johnson_is_supporting_liberia_to_expand_and_train_its_midwifery_workforce") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
             <div class="carousel-images__item">
               <figure class="gallery-item5"></figure>
-              <p>Liberia is one of the focus countries for UNFPA’s provision of essential medicines and supplies for safe delivery and other maternal health needs. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p>{{ $t("liberia_is_one_of_the_focus_countries_for_unfpas_provision_of_essential_medicines_and_supplies_for_safe_delivery_and_other_maternal_health_needs") }}<span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
             <div class="carousel-images__item">
               <figure class="gallery-item6"></figure>
-              <p>Midwife  Gbelly  hands 21-year-old Bendu her newborn daughter. After the baby is delivered, midwives provide post-natal care and support to new mothers. <span>© UNFPA/Elena Heatherwick</span></p>
+              <p> {{ $t("midwife_gbelly_hands_21yearold_bendu_her_newborn_daughter_after_the_baby_is_delivered_midwives_provide_postnatal_care_and_support_to_new_mothers") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
             </div>
           </next-gallery-component>
         </div>
@@ -124,7 +121,7 @@
         <div class="container">
           <div class="row middle-xs center-xs">
             <div class="col-md-6">
-              <p>With support from Johnson Johnson, UNFPA is working to equip midwives with the skills they need to ensure safe birth.</p>
+              <p> {{ $t("with_support_from_johnson_johnson_unfpa_is_working_to_equip_midwives_with_the_skills_they_need_to_ensure_safe_birth") }} </p>
               <ul class="equipments__menu">
                 <li><a :class="{active: current==1}" v-on:mouseover="current = 1">equipped clinic</a></li>
                 <li><a :class="{active: current==2}" v-on:mouseover="current = 2">unequipped clinic</a></li>
@@ -139,17 +136,17 @@
       <div class="container">
         <div class="row center-md middle-xs">
           <div class="col-md-7 col-xs-12" ref="text4">
-            <p class="lead">Most maternal deaths can be prevented with skilled care before, during and after delivery.</p>
+            <p class="lead"> {{ $t("most_maternal_deaths_can_be_prevented_with_skilled_care_before_during_and_after_delivery") }}</p>
             <hr class="p-div">
-            <p class="lead">With support from Johnson & Johnson, UNFPA is working to equip midwives with the skills they need to ensure safe birth.</p>
-            <p class="final-credits">All Liberia photos © UNFPA/Elena Heatherwick</p>
+            <p class="lead"> {{ $t("with_support_from_johnson_johnson_unfpa_is_working_to_equip_midwives_with_the_skills_they_need_to_ensure_safe_birth") }} </p>
+            <p class="final-credits"> {{$t("all_liberia_photos")}} © {{ $t("unfpa_elena_heatherwick") }}</p>
           </div>
         </div>
       </div>
     </section>
     <popup-component v-bind:openedClass="sharing_video" v-on:close="sharing_video = false" class="popup-sharing">
       <div class="popup__content">
-        <p class="title-h5">Midwives save lives, sometimes risking their own in the process. See how midwives in Liberia endeavoured to make <span>#SafeBirth</span> possible during the Ebola epidemic: <span>safebirthevenhere.org</span></p>
+        <p class="title-h5" v-html="$t('midwives_save_lives_sometimes_risking_their_own_in_the_process_see_how_midwives_in_liberia_endeavoured_to_make_safebirth_possible_during_the_ebola_epidemic_safebirthevenhereorg')"></p>
         <div class="buttons">
           <a class="btn btn--primary" v-on:click="shareFacebook('Midwives save lives, sometimes risking their own in the process. See how midwives in Liberia endeavoured to make #SafeBirth possible during the Ebola epidemic: safebirthevenhere.org', 'https://www.youtube.com/watch?v=P3OkdRDTwmc')">Share on Facebook</a>
           <br><br>

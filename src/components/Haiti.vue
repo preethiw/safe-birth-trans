@@ -53,11 +53,11 @@
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item6"></figure>
-                  <p>For midwife Roche, the best part of her job happens in the delivery room. “The woman has been waiting for her baby,” she says, “so have we. So for me, that is the best moment.” <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
+                  <p>{{ $t("for_midwife_roche_the_best_part_of_her_job_happens_in_the_delivery_room_the_woman_has_been_waiting_for_her_baby_she_says_so_have_we_so_for_me_that_is_the_best_moment") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
                 <div class="carousel-images__item">
                   <figure class="gallery-item7"></figure>
-                  <p>UNFPA, with support from Johnson & Johnson, is working to strengthen midwifery in Haiti. And thanks to the work of midwives like Ms. Roche, maternal deaths are falling by 2.2 per cent each year. “Midwives give life,” she says. <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
+                  <p>{{ $t("unfpa_with_support_from_johnson_johnson_is_working_to_strengthen_midwifery_in_haiti_and_thanks_to_the_work_of_midwives_like_ms_roche_maternal_deaths_are_falling_by_22_per_cent_each_year_midwives_give_life_she_says") }} <span>© {{ $t("unfpa_elena_heatherwick") }}</span></p>
                 </div>
               </next-gallery-component>
             </div>
@@ -65,7 +65,7 @@
         </div>
         <div class="col-md-3 col-md-offset-1 col-xs-12">
           <div class="image-animation__text">
-            <p class="title-h4 little-xs" ref="text2">She made it, and delivered her baby with the help of midwife Stephanie Roche.</p>
+            <p class="title-h4 little-xs" ref="text2">{{ $t("she_made_it_and_delivered_her_baby_with_the_help_of_midwife_stephanie_roche") }}</p>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
         </div>
       </figure>
       <div class="image-floating__text image-animation__text">
-        <p class="title-h4" ref="text2">She made it, and delivered her baby with the help of midwife Stefani Roche.</p>
+        <p class="title-h4" ref="text2"> {{ $t("she_made_it_and_delivered_her_baby_with_the_help_of_midwife_stefani_roche") }} </p>
       </div> -->
     </section>
     <section class="video margin-small">
@@ -104,17 +104,17 @@
       <div class="container">
         <div class="row center-md middle-xs">
           <div class="col-md-7 col-xs-12" ref="text3">
-            <p class="lead">Most maternal deaths can be prevented with skilled care before, during and after delivery.</p>
+            <p class="lead">{{ $t("most_maternal_deaths_can_be_prevented_with_skilled_care_before_during_and_after_delivery")}}</p>
             <hr class="p-div">
             <p class="lead">With support from Johnson & Johnson, UNFPA is working to equip midwives with the skills they need to ensure safe birth.</p>
-            <p class="final-credits">All Haiti photos © {{ $t("unfpa_elena_heatherwick") }}</p>
+            <p class="final-credits"> {{$t("all_haiti_photos")}} © {{ $t("unfpa_elena_heatherwick") }}</p>
           </div>
         </div>
       </div>
     </section>
     <popup-component v-bind:openedClass="sharing_video" v-on:close="sharing_video = false" class="popup-sharing">
       <div class="popup__content">
-        <p class="title-h5">What if you were in labour, but the nearest clinic was 4 hours away? One woman in Haiti recounts her journey to secure a <span>#SafeBirth</span> for herself and her baby: <span>safebirthevenhere.org</span></p>
+        <p class="title-h5" v-html="$t('what_if_you_were_in_labour_but_the_nearest_clinic_was_4_hours_away_one_woman_in_haiti_recounts_her_journey_to_secure_a_safebirth_for_herself_and_her_baby_safebirthevenhereorg')"></p>
         <div class="buttons">
           <a class="btn btn--primary" v-on:click="shareFacebook('What if you were in labour, but the nearest clinic was 4 hours away? One woman in Haiti recounts her journey to secure a #SafeBirth for herself and her baby: safebirthevenhere.org', 'https://www.youtube.com/watch?v=kalOOR680xU')">Share on Facebook</a>
           <br><br>
