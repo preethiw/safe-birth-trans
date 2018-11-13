@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row center-sm">
           <div class="col-xs-12 col-xl-12 col-sm-6 col-md-7 col-lg-8">
-            <h3 class="title-h3 little-xs" ref="text1">“I was sure I was going to die, unless I got help.”</h3>
+            <h3 class="title-h3 little-xs" ref="text1">{{ $t("i_was_sure_i_was_going_to_die_unless_i_got_help") }}</h3>
           </div>
         </div>
       </div>
@@ -13,8 +13,8 @@
       <div class="container">
         <div class="row center-sm text-left">
           <div class="col-md-7 col-xs-12">
-            <p class="title-h4" ref="text2">Lena was alone in the wilderness when her labour started.</p>
-            <p class="title-h4" ref="text3">Hours earlier, she had awoken to the sound of gunshots – and then her house was on fire. Cattle rustlers were attacking her community.</p>
+            <p class="title-h4" ref="text2"> {{ $t("lena_was_alone_in_the_wilderness_when_her_labour_started") }}</p>
+            <p class="title-h4" ref="text3"> {{ $t("hours_earlier_she_had_awoken_to_the_sound_of_gunshots_and_then_her_house_was_on_fire_cattle_rustlers_were_attacking_her_community")}} </p>
           </div>
         </div>
       </div>
@@ -24,12 +24,12 @@
       <div class="container">
         <div class="row center-sm middle-sm">
           <div class="col-xs-12 col-xl-12 col-sm-6 col-md-7 col-lg-8">
-            <p class="title-h2 little-xs" ref="text4">“I remember shouting at my children to run into the nearby bush.”</p>
+            <p class="title-h2 little-xs" ref="text4"> {{ $t("i_remember_shouting_at_my_children_to_run_into_the_nearby_bush") }} </p>
           </div>
         </div>
       </div>
       <figcaption class="image-credit">
-        © UNFPA Kenya/ Douglas Waudo
+        © {{ $t("unfpa_kenya_douglas_waudo") }}
       </figcaption>
     </section>
     <section class="margin-default reverse-on-mobile" :class="{container: $root.isMobile}">
@@ -37,11 +37,11 @@
         <div class="col-md-5 col-xs-12">
           <img src="../assets/images/img-kit.jpg" alt="" width="100%">
           <figcaption class="image-credit">
-            © UNFPA Kenya/ Douglas Waudo
+            © {{ $t("unfpa_kenya_douglas_waudo") }}
           </figcaption>
         </div>
         <div class="col-md-4 col-md-offset-1 col-xs-12 kit-text">
-          <p class="title-h4">When she fled, Lena grabbed just one thing: a plastic bag containing her personal items and a UNFPA clean delivery kit.</p>
+          <p class="title-h4"> {{ $t("when_she_fled_lena_grabbed_just_one_thing_a_plastic_bag_containing_her_personal_items_and_a_unfpa_clean_delivery_kit") }} </p>
         </div>
       </div>
     </section>
@@ -49,7 +49,7 @@
       <div class="container">
         <div class="row center-md">
           <div class="col-md-9 col-xs-12">
-            <p class="title-h4" ref="text6">When Lena cried out in the dark, her neighbour heard and came to help. She delivered Lena’s baby boy – using the kit to keep mother and baby safe from infection.</p>
+            <p class="title-h4" ref="text6"> {{ $t("when_lena_cried_out_in_the_dark_her_neighbour_heard_and_came_to_help_she_delivered_lenas_baby_boy_using_the_kit_to_keep_mother_and_baby_safe_from_infection")}} </p>
           </div>
         </div>
       </div>
@@ -59,22 +59,22 @@
       <div class="container">
         <div class="row center-sm middle-sm">
           <div class="col-xs-12 col-xl-12 col-sm-6 col-md-7 col-lg-8">
-            <p class="title-h2 little-xs" ref="text7">“That, I believe, is what saved my life.”</p>
+            <p class="title-h2 little-xs" ref="text7">{{ $t("that_i_believe_is_what_saved_my_life") }}</p>
           </div>
         </div>
       </div>
       <figcaption class="image-credit">
-        © UNFPA Kenya/ Douglas Waudo
+        © {{ $t("unfpa_kenya_douglas_waudo") }}
       </figcaption>
     </section>
     <section class="kit" ref="kit">
       <div class="container">
         <div class="row middle-md center-md">
           <div class="col-md-10 col-xs-12">
-            <h3 class="title-h4">UNFPA clean delivery kits contain simple items that can make a difference between life and death.</h3>
+            <h3 class="title-h4"> {{ $t("unfpa_clean_delivery_kits_contain_simple_items_that_can_make_a_difference_between_life_and_death")}} </h3>
           </div>
           <!-- <div class="col-md-5 col-xs-12">
-            <p>UNFPA distributes clean delivery kits to pregnant women who may lack sterile birthing conditions. The simple items in the kit can make a difference between life and death. </p>
+            <p> {{ t("unfpa_distributes_clean_delivery_kits_to_pregnant_women_who_may_lack_sterile_birthing_conditions_the_simple_items_in_the_kit_can_make_a_difference_between_life_and_death") }} </p>
           </div> -->
         </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
@@ -149,7 +149,7 @@
                 <use :xlink:href="kit_icon('plasticbag')"></use>
               </svg>
             </figure>
-            <p>A plastic sheet provides a clean surface for the mother to lie on during delivery.</p>
+            <p> {{ $t("a_plastic_sheet_provides_a_clean_surface_for_the_mother_to_lie_on_during_delivery") }}</p>
           </li>
           <li>
             <figure>
@@ -157,7 +157,7 @@
                 <use :xlink:href="kit_icon('gloves')"></use>
               </svg>
             </figure>
-            <p>Soap and sterile gloves ensure the birth attendant has clean hands – and during childbirth, clean hands save lives.</p>
+            <p> {{ $t("soap_and_sterile_gloves_ensure_the_birth_attendant_has_clean_hands_and_during_childbirth_clean_hands_save_lives") }}</p>
           </li>
           <li>
             <figure>
@@ -165,7 +165,7 @@
                 <use :xlink:href="kit_icon('razor')"></use>
               </svg>
             </figure>
-            <p>A fresh razor blade, antiseptic and cord ties reduce the risk of infection when cutting the baby’s umbilical cord.</p>
+            <p> {{ $t("a_fresh_razor_blade_antiseptic_and_cord_ties_reduce_the_risk_of_infection_when_cutting_the_babys_umbilical_cord") }}</p>
           </li>
           <li>
             <figure>
@@ -173,7 +173,7 @@
                 <use :xlink:href="kit_icon('plastic')"></use>
               </svg>
             </figure>
-            <p>A clean cloth to wrap the baby keeps her warm during the vulnerable time right after birth.  </p>
+            <p> {{ $t("a_clean_cloth_to_wrap_the_baby_keeps_her_warm_during_the_vulnerable_time_right_after_birth")}} </p>
           </li>
           <li>
             <figure>
@@ -181,7 +181,7 @@
                 <use :xlink:href="kit_icon('bag')"></use>
               </svg>
             </figure>
-            <p>Even the plastic bag the kit comes in has an important use – it provides a hygienic container to dispose of the placenta.</p>
+            <p>{{ $t("even_the_plastic_bag_the_kit_comes_in_has_an_important_use_it_provides_a_hygienic_container_to_dispose_of_the_placenta") }}</p>
           </li>
         </flickity>
         <div class="kit__icons">
@@ -192,7 +192,7 @@
                   <use :xlink:href="kit_icon('plasticbag')"></use>
                 </svg>
               </figure>
-              <p>A plastic sheet provides a clean surface for the mother to lie on during delivery.</p>
+              <p> {{ $t("a_plastic_sheet_provides_a_clean_surface_for_the_mother_to_lie_on_during_delivery") }}</p>
             </li>
             <li>
               <figure>
@@ -200,7 +200,7 @@
                   <use :xlink:href="kit_icon('gloves')"></use>
                 </svg>
               </figure>
-              <p>Soap and sterile gloves ensure the birth attendant has clean hands – and during childbirth, clean hands save lives.</p>
+              <p> {{ $t("soap_and_sterile_gloves_ensure_the_birth_attendant_has_clean_hands_and_during_childbirth_clean_hands_save_lives") }}</p>
             </li>
             <li>
               <figure>
@@ -208,7 +208,7 @@
                   <use :xlink:href="kit_icon('razor')"></use>
                 </svg>
               </figure>
-              <p>A fresh razor blade, antiseptic and cord ties reduce the risk of infection when cutting the baby’s umbilical cord.</p>
+              <p> {{ $t("a_fresh_razor_blade_antiseptic_and_cord_ties_reduce_the_risk_of_infection_when_cutting_the_babys_umbilical_cord") }}</p>
             </li>
             <li>
               <figure>
@@ -216,7 +216,7 @@
                   <use :xlink:href="kit_icon('plastic')"></use>
                 </svg>
               </figure>
-              <p>A clean cloth to wrap the baby keeps her warm during the vulnerable time right after birth.  </p>
+              <p> {{ $t("a_clean_cloth_to_wrap_the_baby_keeps_her_warm_during_the_vulnerable_time_right_after_birth")}}  </p>
             </li>
             <li>
               <figure>
@@ -224,7 +224,7 @@
                   <use :xlink:href="kit_icon('bag')"></use>
                 </svg>
               </figure>
-              <p>Even the plastic bag the kit comes in has an important use – it provides a hygienic container to dispose of the placenta.</p>
+              <p> {{ $t("even_the_plastic_bag_the_kit_comes_in_has_an_important_use_it_provides_a_hygienic_container_to_dispose_of_the_placenta") }}</p>
             </li>
           </ul>
         </div>
@@ -240,8 +240,8 @@
       <div class="container">
         <div class="row center-md middle-xs">
           <div class="col-md-7 col-xs-12">
-            <p class="lead" ref="text8">UNFPA distributes clean delivery kits to pregnant women who may lack sterile birthing conditions. These low-cost interventions can prevent maternal deaths.</p>
-            <p class="final-credits">All Kenya photos © UNFPA Kenya/ Douglas Waudo</p>
+            <p class="lead" ref="text8"> {{ $t("unfpa_distributes_clean_delivery_kits_to_pregnant_women_who_may_lack_sterile_birthing_conditions_these_lowcost_interventions_can_prevent_maternal_deaths") }}</p>
+            <p class="final-credits"> {{ $t("all_kenya_photos")}} © {{ $t("unfpa_kenya_douglas_waudo") }}</p>
 
           </div>
         </div>
@@ -249,7 +249,7 @@
     </section>
     <popup-component v-bind:openedClass="sharing_kit" v-on:close="sharing_kit = false" class="popup-sharing">
       <div class="popup__content">
-        <p class="title-h5">How can a razor blade, a plastic sheet and some disposable gloves save two lives? Find out at safebirthevenhere.org and join <span>@UNFPA</span> to support <span>#SafeBirth</span>.</p>
+        <p class="title-h5" v-html="$t('how_can_a_razor_blade_a_plastic_sheet_and_some_disposable_gloves_save_two_lives_find_out_at_safebirthevenhereorg_and_join_unfpa_to_support_safebirth')"></p>
         <div class="buttons">
           <a class="btn btn--primary" v-on:click="shareFacebook('How can a razor blade, a plastic sheet and some disposable gloves save two lives? Find out at safebirthevenhere.org and join @UNFPA to support #SafeBirth.', 'https://www.safebirthevenhere.org/#/kenya')">Share on Facebook</a>
           <br><br>

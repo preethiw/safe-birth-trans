@@ -38,7 +38,7 @@
       </div>
       <div class="opening__footer" ref="footer">
         <div class="credits">
-          <p>safe birth even here ® 2018 . <a href="#" target="_blank">Privacy Policy</a> and <a href="https://www.unfpa.org/terms-use" target="_blank">Terms of Use</a></p>
+          <p>safe birth even here ® 2018 . <a href="#" target="_blank">{{ $t("privacy_policy") }}</a> and <a href="https://www.unfpa.org/terms-use" target="_blank"> {{ $t("terms_of_use")}} </a></p>
         </div>
       </div>
     </div>

@@ -5,8 +5,10 @@
       <div class="closing__content">
         <div class="closing__circle" ref="circle">
           <div class="closing__text" ref="title">
-            <h2 class="title-h4">
-              While you´ve been here, {{$root.women}} {{counterDescription}} died giving birth.
+            <h2 class="title-h4" v-html="$t('while_youve_been_here_rootwomen_counterdescription_died_giving_birth',{
+               root_women : $root.women,
+               counter_description: counterDescription
+           })">
             </h2>
           </div>
           <svg class="color" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" :stroke-dashoffset="stroke">
@@ -24,11 +26,11 @@
           </svg>
         </div>
         <h3 class="title-h4" ref="link">
-          You can help<span class="delimiter"></span> <router-link to="/action" class="link-default">stop the clock.</router-link>
+          {{ $t("you_can_help") }}<span class="delimiter"></span> <router-link to="/action" class="link-default">{{ $t("stop_the_clock") }}</router-link>
         </h3>
       </div>
       <div class="closing__credits">
-        <p>© Lynsey Addario for Time</p>
+        <p>© {{ $t("lynsey_addario_for_time") }}</p>
       </div>
     </div>
     <transition name="fade" appear>

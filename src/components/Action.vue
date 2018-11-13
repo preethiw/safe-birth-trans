@@ -7,31 +7,31 @@
         <ul v-if="$root.isMobile" class="action__menu">
           <li>
             <a :href="donateLink" target="_blank">Donate</a>
-            <p>Contribute to help fund the lifesaving work of midwives and provide clean delivery kits that protect women during childbirth.</p>
+            <p> {{ $t("contribute_to_help_fund_the_lifesaving_work_of_midwives_and_provide_clean_delivery_kits_that_protect_women_during_childbirth") }} </p>
           </li>
           <li>
-            <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" v-if="isUS">Join</a>
-            <a v-on:click="pledge_popup = true; $root.menuOpened = true" v-else>Join</a>
-            <p>Stand with UNFPA to end maternal deaths.</p>
+            <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" v-if="isUS"> {{ $t("join") }} </a>
+            <a v-on:click="pledge_popup = true; $root.menuOpened = true" v-else>{{ $t("join") }}</a>
+            <p> {{ $t("stand_with_unfpa_to_end_maternal_deaths") }} </p>
           </li>
           <li>
-            <a v-on:mouseover="bg = 3" v-on:click="showSharingPopup">Share</a>
-            <p>Raise awareness of every pregnant woman’s right to a safe birth.</p>
+            <a v-on:mouseover="bg = 3" v-on:click="showSharingPopup"> {{ $t("share") }} </a>
+            <p> {{ $t("raise_awareness_of_every_pregnant_womans_right_to_a_safe_birth")}} </p>
           </li>
         </ul>
         <ul v-else class="action__menu" v-on:mouseleave="bg = 2">
           <li>
-            <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" v-on:mouseover="bg = 1" v-if="isUS">Join</a>
-            <a v-on:click="pledge_popup = true; $root.menuOpened = true" v-on:mouseover="bg = 1" v-else>Join</a>
-            <p>Stand with UNFPA to end maternal deaths.</p>
+            <a href="https://secure2.convio.net/unfpa/site/SSurvey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&SURVEY_ID=1543" target="_blank" v-on:mouseover="bg = 1" v-if="isUS">{{ $t("join") }}</a>
+            <a v-on:click="pledge_popup = true; $root.menuOpened = true" v-on:mouseover="bg = 1" v-else>{{ $t("join") }}</a>
+            <p>{{ $t("stand_with_unfpa_to_end_maternal_deaths") }} </p>
           </li>
           <li>
             <a :href="donateLink" target="_blank" v-on:mouseover="bg = 2">Donate</a>
-            <p>Contribute to help fund the lifesaving work of midwives and provide clean delivery kits that protect women during childbirth.</p>
+            <p> {{ $t("contribute_to_help_fund_the_lifesaving_work_of_midwives_and_provide_clean_delivery_kits_that_protect_women_during_childbirth") }}</p>
           </li>
           <li>
-            <a v-on:mouseover="bg = 3" v-on:click="showSharingPopup">Share</a>
-            <p>Raise awareness of every pregnant woman’s right to a safe birth.</p>
+            <a v-on:mouseover="bg = 3" v-on:click="showSharingPopup">{{ $t("share") }}</a>
+            <p> {{ $t("raise_awareness_of_every_pregnant_womans_right_to_a_safe_birth")}} </p>
           </li>
         </ul>
       </div>
@@ -42,13 +42,13 @@
             <img src="../assets/images/logo-jj.svg" alt="">
           </div>
         </div>-->
-        <p>This website was developed with support from Johnson & Johnson. Safe Birth Even Here is a UNFPA initiative to ensure that women have what they need to deliver their babies safely, even in humanitarian crises and fragile situations.</p>
-        <p><a href="http://www.unfpa.org/maternal-health" target="_blank" class="link-default">Learn more about maternal mortality</a></p>
-        <p class="show-on-mobile">Cover photo © UNFPA<br/>South Sudan/Bruno Feder</p>
-        <p class="show-on-mobile">Safe birth even here ® 2018<br/><a class="link-default" href="#" target="_blank">Privacy Policy</a> and <a class="link-default" href="https://www.unfpa.org/terms-use" target="_blank">Terms of Use</a></p>
+        <p> {{ $t("this_website_was_developed_with_support_from_johnson_johnson_safe_birth_even_here_is_a_unfpa_initiative_to_ensure_that_women_have_what_they_need_to_deliver_their_babies_safely_even_in_humanitarian_crises_and_fragile_situations") }} </p>
+        <p><a href="http://www.unfpa.org/maternal-health" target="_blank" class="link-default"> {{ $t("learn_more_about_maternal_mortality") }}</a></p>
+        <p class="show-on-mobile"> {{ $t("cover_photo_unfpa") }} <br/>{{ $t("south_sudanbruno_feder") }}</p>
+        <p class="show-on-mobile">Safe birth even here ® 2018<br/><a class="link-default" href="#" target="_blank"> {{ $t("privacy_policy") }} </a> {{ $t("and") }} <a class="link-default" href="https://www.unfpa.org/terms-use" target="_blank"> {{ $t("terms_of_use") }} </a></p>
       </div>
       <div class="action__credits">
-        <p>© Lynsey Addario for Time</p>
+        <p>© {{ $t("lynsey_addario_for_time") }} </p>
       </div>
     </div>
     <popup-component v-bind:openedClass="pledge_popup" v-on:close="pledge_popup = false; $root.menuOpened = false" class="popup-action">
@@ -58,18 +58,18 @@
       <div class="popup__content">
         <flickity ref="flickity" :options="{freeScroll: false, wrapAround: true, cellAlign: 'center', pageDots: true, prevNextButtons: true}" class="carousel-share">
           <div class="popup-sharing__card">
-            <p class="title-h5">Every day, over 830 women die giving birth – more than one every two minutes. Join <span>@UNFPA</span> to support <span>#SafeBirth</span>: <span>safebirthevenhere.org</span></p>
+            <p class="title-h5" v-html="$t('every_day_over_830_women_die_giving_birth_more_than_one_every_two_minutes_join_unfpa_to_support_safebirth_safebirthevenhereorg')"></p>
           </div>
           <div class="popup-sharing__card">
-            <p class="title-h5">I stand with <span>@UNFPA</span> to end maternal deaths. Each of us can make a difference by raising awareness about a pregnant woman’s right to a <span>#SafeBirth</span>, no matter where she lives: <span>safebirthevenhere.org</span></p>
+            <p class="title-h5" v-html="$t('i_stand_with_unfpa_to_end_maternal_deaths_each_of_us_can_make_a_difference_by_raising_awareness_about_a_pregnant_womans_right_to_a_safebirth_no_matter_where_she_lives_safebirthevenhereorg')"></p>
           </div>
           <div class="popup-sharing__card">
-            <p class="title-h5">Every two minutes, a woman dies giving birth. You can support <span>#SafeBirth</span> and help <span>@UNFPA</span> stop the clock. Find out how here: <span>safebirthevenhere.org</span></p>
+            <p class="title-h5" v-html="$t('every_two_minutes_a_woman_dies_giving_birth_you_can_support_safebirth_and_help_unfpa_stop_the_clock_find_out_how_here_safebirthevenhereorg')"> </p>
           </div>
         </flickity>
         <div class="buttons">
-          <a class="btn btn--primary" v-on:click="shareCarousel(0)">Share on Facebook</a>
-          <a class="btn btn--primary" v-on:click="shareCarousel(1)">Share on Twitter</a>
+          <a class="btn btn--primary" v-on:click="shareCarousel(0)"> {{ $t("share_on_facebook") }} </a>
+          <a class="btn btn--primary" v-on:click="shareCarousel(1)"> {{ $t("share_on_twitter") }} </a>
         </div>
       </div>
     </popup-component>
@@ -133,7 +133,7 @@ export default {
 
       if (network === 0) {
         if (item === 0) {
-          this.shareFacebook('Every day, over 830 women die giving birth – more than one every two minutes. Join @UNFPA to support #SafeBirth: safebirthevenhere.org', 'safebirth')
+          this.shareFacebook('Every day, over 830 women die giving birth – more than one every two minutes. {{ $t("join") }} @UNFPA to support #SafeBirth: safebirthevenhere.org', 'safebirth')
         } else if (item === 1) {
           this.shareFacebook('I stand with @UNFPA to end maternal deaths. Each of us can make a difference by raising awareness about a pregnant woman’s right to a #SafeBirth, no matter where she lives: safebirthevenhere.org', 'safebirth')
         } else if (item === 2) {
