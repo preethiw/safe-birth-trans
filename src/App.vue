@@ -1,29 +1,25 @@
 <template>
-  <div id="app" :class="{slide: isSlide}">
-    <localizer>
-            <navbar />
-
-            <main class="container" role="main">
-                <router-view/>
-            </main>
-    </localizer>
-    <!--<link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>-->
-    <!-- <div class="app__overlay" ref="overlay"></div> -->
-    <loading-component></loading-component>
-    <navigation-component></navigation-component>
-    <!-- <full-menu-component></full-menu-component> -->
-    <!-- <transition v-on:after-enter="enter" v-on:leave="leave" v-on:before-leave="beforeLeave" mode="out-in"> -->
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
-    <div class="landscape-warning">
-      <img src="./assets/images/landscape.svg"/>
-      <span>Please rotate your device to portrait view to continue browsing.</span>
-    </div>
-    <popup-component v-bind:openedClass="$root.counterPopup" v-on:close="closePopup" class="popup-counter">
-      <popup-counter-component></popup-counter-component>
-    </popup-component>
-  </div>
+   <div id="app" :class="{slide: isSlide}">
+      <localizer>
+         <navbar />
+         <!--<link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>-->
+         <!-- <div class="app__overlay" ref="overlay"></div> -->
+         <loading-component></loading-component>
+         <navigation-component></navigation-component>
+         <!-- <full-menu-component></full-menu-component> -->
+         <!-- <transition v-on:after-enter="enter" v-on:leave="leave" v-on:before-leave="beforeLeave" mode="out-in"> -->
+         <transition name="fade" mode="out-in">
+            <router-view></router-view>
+         </transition>
+         <div class="landscape-warning">
+            <img src="./assets/images/landscape.svg"/>
+            <span>Please rotate your device to portrait view to continue browsing.</span>
+         </div>
+         <popup-component v-bind:openedClass="$root.counterPopup" v-on:close="closePopup" class="popup-counter">
+            <popup-counter-component></popup-counter-component>
+         </popup-component>
+      </localizer>
+   </div>
 </template>
 
 <script>
