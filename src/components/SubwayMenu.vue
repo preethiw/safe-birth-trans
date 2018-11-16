@@ -5,7 +5,7 @@
       <toggle-button-component v-if="$root.isMobile" v-show="!opened" v-on:toggle="opened = !opened" key="toggle"></toggle-button-component>
     </transition-group>
     <ul>
-      <li :class="{active: $route.path == item || ($route.path == '/action' && item == '/closing')}" :key="item" v-for="item in $root.menuOrder"><router-link :to="'/'+$route.params.locale+item"><span>{{menuName(item)}}</span></router-link></li>
+      <li :class="{active: $route.path == item || ($route.path == '/action' && item == '/closing')}" :key="item" v-for="item in $root.menuOrder"><router-link :to="item"><span>{{menuName(item)}}</span></router-link></li>
     </ul>
 
     <div class="subway-menu__buttons" v-if="$root.isMobile">
@@ -32,7 +32,7 @@ export default {
       this.$emit('share')
     },
     menuName: function (item) {
-      var name = item.slice(1)
+      var name = item.slice(4)
 
       switch (name) {
         case '':
