@@ -122,11 +122,11 @@ export default {
     }
   },
   beforeDestroy () {
-    this.$parent.$off('slide')
+    this.$parent.$parent.$parent.$off('slide')
   },
   created () {
     this.slide = 0
-    this.$parent.$on('slide', this.move)
+    this.$parent.$parent.$parent.$on('slide', this.move)
     if (this.$root.loading) this.canScroll = true
   }
 }
