@@ -403,17 +403,19 @@ export default {
       this.orderMenu()
     },
     orderMenu: function () {
-      this.$root.menuOrder = ['/', '/map']
+      var currentLanguage = '/'+this.$root.$root.lang
+      this.$root.menuOrder = [currentLanguage, currentLanguage+'/map']
 
       if (this.$root.dataStory.name === 'Liberia') {
-        this.$root.menuOrder.push('/liberia', '/haiti', '/kenya')
+        this.$root.menuOrder.push(currentLanguage+'/liberia', currentLanguage+'/haiti', currentLanguage+'/kenya')
       } else if (this.$root.dataStory.name === 'Haiti') {
-        this.$root.menuOrder.push('/haiti', '/liberia', '/kenya')
+        this.$root.menuOrder.push(currentLanguage+'/haiti', currentLanguage+'/liberia', currentLanguage+'/kenya')
       } else if (this.$root.dataStory.name === 'Kenya') {
-        this.$root.menuOrder.push('/kenya', '/liberia', '/haiti')
+        this.$root.menuOrder.push(currentLanguage+'/kenya', currentLanguage+'/liberia', currentLanguage+'/haiti')
       }
 
-      this.$root.menuOrder.push('/closing')
+      this.$root.menuOrder.push(currentLanguage+'/closing')
+      console.log(this.$root.menuOrder);
     }
   },
   watch: {
