@@ -10,7 +10,8 @@
                 :to="`/${locale.code}`"
                 class="dropdown-item"
             >
-                <img :src="icons[locale.code]" class="country-icon" />
+           <strong>{{ locale.code }}</strong>
+                   <!-- <img :src="icons[locale.code]" class="country-icon" /> -->
             </router-link>
         </div>
     </li>

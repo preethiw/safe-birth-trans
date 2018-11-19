@@ -403,7 +403,7 @@ export default {
       this.orderMenu()
     },
     orderMenu: function () {
-      var currentLanguage = '/'+this.$root.$root.lang
+      var currentLanguage = '/'+this.$route.params.locale
       this.$root.menuOrder = [currentLanguage, currentLanguage+'/map']
 
       if (this.$root.dataStory.name === 'Liberia') {
@@ -415,7 +415,6 @@ export default {
       }
 
       this.$root.menuOrder.push(currentLanguage+'/closing')
-      console.log(this.$root.menuOrder);
     }
   },
   watch: {
