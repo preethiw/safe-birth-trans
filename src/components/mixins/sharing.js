@@ -53,14 +53,24 @@ export default {
       // this.share(url)
 
       if (link === 'safebirth') {
-        link = window.location.origin + '/safebirth'
+        //enable below while going live.
+        //link = window.location.origin + '/safebirth'
+        //Remove this while going live.
+        link = 'https://www.unfpa.org/safebirth'
       }
 
       FB.ui({
-        method: 'share',
-        mobile_iframe: true,
-        href: link,
-        quote: text
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        display: 'popup',
+        action_properties: JSON.stringify({
+          object: {
+          'og:url': link,
+          'og:title': '',
+          'og:description': text,
+          'og:image': 'https://www.unfpa.org/sites/all/modules/unfpa_global_swop18/elements/entry/images/entry-1.jpg'
+          }
+        })
       })
     },
     share: function (url) {
