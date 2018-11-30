@@ -11,4 +11,9 @@ export const locales = [
         name: 'français',
         dir: 'ltr',
     },
+    {
+        code: 'es',
+        name: 'Español',
+        dir: 'ltr',
+    }
 ]
