@@ -208,6 +208,39 @@ export default {
 </script>
 
 <style lang="scss">
+.fr,
+.es {
+  .opening {
+    .section0 {
+      .title-h2 {
+        font-size: 4.2em !important;
+        @media screen and (max-width: 1000px) {
+          font-size: 4em !important;
+        }
+        @media screen and (max-width: $mobile-breakpoint) {
+          font-size: 3em !important;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 4em;
+        }
+        @media screen and (max-width: 1150px) {
+          font-size: 3em;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 2em;
+        }
+      }
+    }
+    .section1 {
+      .title-h4 {
+          @media screen and (max-width: $mobile-breakpoint) {
+              font-size: em(26);
+          }
+      }
+    }
+  }
+}
+
 .opening{
   position: relative;
   background-color: $color_body;
@@ -558,7 +591,7 @@ export default {
   &__counter{
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 50% !important;
     transform: translate3d(-50%, -50%, 0);
     z-index: 10;
     -webkit-transform-style: preserve-3d;
