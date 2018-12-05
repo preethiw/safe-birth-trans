@@ -13,6 +13,7 @@
         <div class="main-nav__counter" v-if="$route.name != 'Closing' && $route.name != 'Action' && $route.name != 'Home'">
           <counter-component></counter-component>
         </div>
+        <div class="lan-btn-wrapper"><navbar-component /></div>
         <div class="main-nav__menu" v-if="$route.name != 'Closing' && $route.name != 'Action' && !$root.isMobile">
           <ul>
             <li><a :href="donateLink" target="_blank" class="btn-donate">Donate</a></li>
@@ -55,6 +56,7 @@
 import SubwayMenuComponent from './SubwayMenu'
 import CounterComponent from './Counter'
 import PopupComponent from './Popup.vue'
+import NavbarComponent from './Navbar.vue'
 import sharing from './mixins/sharing.js'
 
 export default {
@@ -117,7 +119,8 @@ export default {
   components: {
     SubwayMenuComponent,
     CounterComponent,
-    PopupComponent
+    PopupComponent,
+    NavbarComponent
   }
 }
 </script>
@@ -263,6 +266,8 @@ export default {
 
     &__counter{
       top: em(15);
+      left: 30%;
+      transform: translateX(-50px);
       margin-right: em(40);
     }
   }

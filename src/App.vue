@@ -1,7 +1,6 @@
 <template>
-   <div id="app" :class="{slide: isSlide}">
+   <div id="app" :class="[{slide: isSlide}, languageClass]">
       <localizer>
-         <navbar />
          <!--<link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png"/>-->
          <!-- <div class="app__overlay" ref="overlay"></div> -->
          <loading-component></loading-component>
@@ -64,6 +63,9 @@ export default {
       } else {
         return false
       }
+    },
+    languageClass:function(){
+      return this.$route.params.locale
     }
   },
   methods: {
@@ -694,6 +696,33 @@ input, textarea, select, button{
   }
 }
 
+.fr {
+  .title-h4 {
+     font-size: em(42);
+     @media screen and (max-width: $mobile_breakpoint) {
+        font-size: em(22);
+     }
+  }
+}
+
+.es {
+  .title-h4 {
+     font-size: em(46);
+     @media screen and (max-width: $mobile_breakpoint) {
+        font-size: em(22);
+     }
+  }
+}
+
+.fr,
+.es {
+  .blockquote-default{
+    &__text{
+       font-size: em(90);
+    }
+  }
+}
+
 .blockquote-default{
   padding: 0 em(60);
 
@@ -1138,6 +1167,48 @@ a{
   img{
     max-width: 100%;
     height: auto;
+  }
+}
+
+#app {
+  .navbar.fixed-top {
+      background-color: white;
+      border: 1px solid #B9B9B9;
+      position: absolute;
+      z-index: 99;
+      right: 268px;
+      top: 36px;
+      border-radius: em(25, 14);
+      padding: 4px;
+        li {
+          line-height: 12px;
+            a.dropdown-item {
+              border-right: 1px solid #B9B9B9;
+              display: inline-block;
+              padding: 0 4px;
+              text-transform: uppercase;
+              line-height: 12px;
+              margin: 0;
+              text-decoration: none;
+              strong {
+                color: #131836;
+                font-size: 10px;
+              }
+            }
+            a.dropdown-item.router-link-active,  
+            a.dropdown-item:hover {
+              strong {
+                color: #037da9;
+              }
+            }  
+            a.dropdown-item:last-child {
+              border-right: 0 none;
+            }
+        }
+        @media screen and (max-width: 768px) {
+          right: 54px;
+          top: 28px;
+        }
   }
 }
 </style>
