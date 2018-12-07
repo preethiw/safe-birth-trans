@@ -405,19 +405,19 @@ export default {
       this.orderMenu()
     },
     orderMenu: function () {
-      var currentLanguage = '/'+this.$route.params.locale
-      this.$root.menuOrder = [currentLanguage, currentLanguage+'/map']
+      this.$root.menuOrder = ['/', '/map']
 
       if (this.$root.dataStory.name === 'Liberia') {
-        this.$root.menuOrder.push(currentLanguage+'/liberia', currentLanguage+'/haiti', currentLanguage+'/kenya')
+        this.$root.menuOrder.push('/liberia', '/haiti', '/kenya')
       } else if (this.$root.dataStory.name === 'Haiti') {
-        this.$root.menuOrder.push(currentLanguage+'/haiti', currentLanguage+'/liberia', currentLanguage+'/kenya')
+        this.$root.menuOrder.push('/haiti', '/liberia', '/kenya')
       } else if (this.$root.dataStory.name === 'Kenya') {
-        this.$root.menuOrder.push(currentLanguage+'/kenya', currentLanguage+'/liberia', currentLanguage+'/haiti')
+        this.$root.menuOrder.push('/kenya', '/liberia', '/haiti')
       }
 
-      this.$root.menuOrder.push(currentLanguage+'/closing')
+      this.$root.menuOrder.push('/closing')
     }
+
   },
   watch: {
     '$root.women': function () {

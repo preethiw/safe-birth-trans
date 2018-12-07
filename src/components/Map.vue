@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="map-legend__map2" ref="legend2">
-            <span></span> {{ $t("maps_second_slide_bottom_text2")}} {{year}}
+            <span></span> {{ $t("maps_second_slide_bottom_text2") }} {{year}}
           </div>
         </div>
         <!--<div class="map-controls">
@@ -50,13 +50,13 @@
             <h3 class="title-h4" v-if="$root.userLocation">
               {{ $t("a_women_in") }} <story-dropdown-component></story-dropdown-component> {{ $t("coutnry_wise_comparison_text", {
               story_number : this.storyNumber,
-              user_location : this.$root.dataUser.name,
+              user_location : this.$root.dataUser.name
               }) }}
             </h3>
             <h3 class="title-h4" v-else>
               {{ $t("a_women_in") }} <story-dropdown-component></story-dropdown-component> {{ $t("coutnry_wise_comparison_text_1", {
               story_number : this.storyNumber,
-              user_location : this.$root.dataUser.name,
+              user_location : this.$root.dataUser.name
               }) }}
             </h3>
             <div class="map-comparison__actions">
@@ -94,7 +94,7 @@
       <div class="popup__content">
         <p class="title-h5">{{storyTweet}} <span>#SafeBirth #UNFPA</span></p>
         <div class="buttons">
-          <a class="btn btn--primary" v-on:click="shareFacebook(storyTweet, 'safebirth')">{{ $t("share_on_facebook")}}</a>
+          <a class="btn btn--primary" v-on:click="shareFacebook(storyTweet, 'safebirth')">{{ $t("share_on_facebook") }}</a>
           <a class="btn btn--primary" v-on:click="shareTwitter(storyTweet, 'safebirth', '')">{{ $t("share_on_twitter") }}</a>
         </div>
       </div>
